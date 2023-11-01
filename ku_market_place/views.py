@@ -5,7 +5,7 @@ from ku_market_place.models import Order
 
 
 class HomePageView(generic.ListView):
-    template_name = 'ku_market_place/home.html'
+    template_name = 'ku_market_place/index.html'
     context_object_name = 'order_lists'
 
     def get_queryset(self):
