@@ -6,6 +6,5 @@ from ku_market_place.models import *
 admin.site.register(Order)
 admin.site.register(OrderItem)
 admin.site.register(Product)
-admin.site.register(Category)
 admin.site.register(Shipping)
 admin.site.register(Customer)
