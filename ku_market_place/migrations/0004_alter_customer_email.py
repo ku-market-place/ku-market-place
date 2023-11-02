@@ -15,8 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="customer",
             name="email",
-            model_name='customer',
-            name='email',
             field=models.EmailField(max_length=254),
         ),
     ]
