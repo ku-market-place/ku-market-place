@@ -1,17 +1,9 @@
 from django.views import generic
-from ku_market_place.models import Order, Product
+from ku_market_place.models import Product
 from django.shortcuts import render
 
 
 # Create your views here.
-
-
-class HomePageView(generic.ListView):
-    template_name = 'ku_market_place/index.html'
-    context_object_name = 'order_lists'
-
-    def get_queryset(self):
-        return Order.objects.all()
 
 
 class ProductView(generic.ListView):
@@ -21,6 +13,16 @@ class ProductView(generic.ListView):
     def get_queryset(self):
         """Return products list."""
         return Product.objects.all()
+
+
+class ProductDetailView(generic.DetailView):
+    model = Product
+    template_name = 'ku_market_place/single-product.html'
+
+    def get(self, request, *args, **kwargs):
+        product = Product.objects.get(pk=kwargs['pk'])
+        context = {'product': product}
+        return render(request, self.template_name, context)
 
 
 def about(request):
@@ -33,7 +35,3 @@ def contact(request):
 
 def order_list(request):
     return render(request, 'ku_market_place/order_list.html')
-
-
-def single_product(request):
-    return render(request, 'ku_market_place/single-product.html')

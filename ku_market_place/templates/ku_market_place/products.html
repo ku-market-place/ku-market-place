@@ -48,11 +48,6 @@ https://www.tooplate.com/view/2114-pixie
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'ku-market-place:index' %}">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'ku-market-place:product' %}">Products</a>
             </li>
@@ -94,7 +89,9 @@ https://www.tooplate.com/view/2114-pixie
                   <div id="{{ product.id }}" class="item new col-md-4">
                       <div class="featured-item">
                           <img src="{{ product.image.url }}" alt="">
-                          <h4>{{ product.product_name }}</h4>
+                          <a href="{% url 'ku-market-place:single_product' product.id %}">
+                            <h4>{{ product.product_name }}</h4>
+                          </a>
                           <h6>฿{{ product.price }}</h6>
                       </div>
                   </div>
