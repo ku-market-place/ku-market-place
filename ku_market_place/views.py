@@ -1,5 +1,5 @@
 from django.views import generic
-from ku_market_place.models import Order
+from ku_market_place.models import Order, Product
 from django.shortcuts import render
 
 
@@ -14,6 +14,15 @@ class HomePageView(generic.ListView):
         return Order.objects.all()
 
 
+class ProductView(generic.ListView):
+    template_name = 'ku_market_place/products.html'
+    context_object_name = 'product_lists'
+
+    def get_queryset(self):
+        """Return products list."""
+        return Product.objects.all()
+
+
 def about(request):
     return render(request, 'ku_market_place/about.html')
 
@@ -24,10 +33,6 @@ def contact(request):
 
 def order_list(request):
     return render(request, 'ku_market_place/order_list.html')
-
-
-def product(request):
-    return render(request, 'ku_market_place/products.html')
 
 
 def single_product(request):
