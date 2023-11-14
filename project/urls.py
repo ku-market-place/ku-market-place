@@ -23,4 +23,5 @@ urlpatterns = [
     path("", RedirectView.as_view(url="ku-market-place/")),
     path("admin/", admin.site.urls),
     path("ku-market-place/", include("ku_market_place.urls")),
+    path('accounts/', include('allauth.urls')),
 ]
