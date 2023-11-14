@@ -34,7 +34,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = 'kuhub:review'
+LOGIN_REDIRECT_URL = 'ku-market-place:home'
 LOGOUT_REDIRECT_URL = 'account_login'
 
 # Application definition
