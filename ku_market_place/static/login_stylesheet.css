@@ -58,9 +58,17 @@ button{
     border-radius: 5px;
     position: relative;
     left: 20%;
-
 }
 button:hover {
     background-color: #3c63d3;
     color: #ffffff;
+}
+
+.btn-outline-primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    left: 20%;
 }
