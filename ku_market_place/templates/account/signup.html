@@ -16,18 +16,33 @@
 <div class="d-flex align-items-center justify-content-center vh-100">
     <div class="form-container">
         <h3 class="title">Create Account</h3>
-        <form class="form-horizontal">
-            <i class="fa-solid fa-user m-2"></i>Username: {{ form.username }}
-            <br>
-            <i class="fa-solid fa-envelope m-2"></i>Email (Optional): {{ form.email }}
-            <br>
-            <i class="fa-solid fa-lock m-2"></i>Password: <input type="password" name="password" value="{{ form.password }}">
-            <br>
-            <i class="fa-solid fa-lock m-2"></i>Confirm Password: {{ form.password2 }}
-            <br>
+        <form class="form-horizontal" method="POST">
+            {% csrf_token %}
+            <div class="signup">
+                {% for field in form %}
+                <p>
+                    {% if field.errors %}
+                    <ul class="errorlist">
+                        {% for error in field.errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if field.name == 'username' %}
+                        <i class="fa-solid fa-user m-2"></i>Username: {{ field }}
+                    {% elif field.name == 'email' %}
+                        <i class="fa-solid fa-envelope m-2"></i>Email (Optional): {{ field }}
+                    {% elif field.name == 'password1' %}
+                        <i class="fa-solid fa-lock m-2"></i>Password: {{ field }}
+                    {% elif field.name == 'password2' %}
+                        <i class="fa-solid fa-lock m-2"></i>Confirm Password: {{ field }}
+                    {% endif %}
+                </p>
+                {% endfor %}
+            </div>
             <button class="btn signup">Sign up</button>
         </form>
-        <button class="btn signin"><a class="nav-link" href="{% provider_login_url google %}">Sign in</a></button>
+        <button type="submit" class="btn signin"><a class="nav-link" href="{% provider_login_url google %}">Sign in</a></button>
     </div>
 </div>
 
