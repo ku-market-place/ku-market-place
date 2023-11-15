@@ -1,4 +1,5 @@
 from django.http import Http404
+from django.urls import reverse
 from django.views import generic
 from ku_market_place.models import Product
 from django.shortcuts import render, get_object_or_404, redirect
@@ -27,11 +28,11 @@ class ProductDetailView(generic.DetailView):
             messages.warning(
                 request,
                 f"Product ID {key} does not exist.❗️")
-            return redirect("kuhub:product")
+            return redirect("ku-market-place:product")
 
         return render(
             request,
-            reversed('kuhub:single_product'),
+            self.template_name,
             context={"product": product},
         )
 
