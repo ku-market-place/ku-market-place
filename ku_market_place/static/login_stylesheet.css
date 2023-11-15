@@ -64,11 +64,31 @@ button:hover {
     color: #ffffff;
 }
 
-.btn-outline-primary {
+.btn-primary {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px;
     border-radius: 5px;
     position: relative;
     left: 20%;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    background-color: rgba(169, 188, 239, 0.18);
+    border: 2px solid #1a45d7;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-indent: 10px;
+  }
+
+
+#account-login {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.forgot-password-link {
+    color: #2d45de;
 }
