@@ -1,0 +1,62 @@
+.form-container {
+    background-color: #f6f4f4;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+.form-container:before,
+.form-container:after {
+    content: '';
+    background-color: #8054da;
+    height: 50%;
+    width: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.form-container:after {
+    top: auto;
+    bottom: 10px;
+    left: auto;
+    right: 10px;
+}
+
+.form-container .title {
+    color: rgba(76, 19, 162, 0.96);
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.form-container .btn.signout {
+    color: #fff;
+    background-color: #b178ec;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #5d00ff;
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.btn.signout {
+    color: #be4bf5;
+    background-color: #ffffff;
+}
+
+.btn.signout:hover,
+.btn.signout:focus {
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px #d125fd;
+}
