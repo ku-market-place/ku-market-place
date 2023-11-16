@@ -17,20 +17,18 @@ class ProductView(generic.ListView):
         return Product.objects.all()
 
     def get(self, request, *args, **kwargs):
-        search_post = request.GET.get('search')
-        if search_post:
+        search_product = request.GET.get('search')
+        if search_product:
             product_lists = Product.objects.filter(
-                Q(product_name__icontains=search_post)
+                Q(product_name__icontains=search_product)
             )
             if product_lists:
-                print("dwdaw")
                 return render(
                     request,
                     self.template_name,
                     context={"product_lists": product_lists},
                 )
 
-            print('qqqq')
             return render(
                 request,
                 self.template_name,
