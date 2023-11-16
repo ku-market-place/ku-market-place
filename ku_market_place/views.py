@@ -22,10 +22,19 @@ class ProductView(generic.ListView):
             product_lists = Product.objects.filter(
                 Q(product_name__icontains=search_post)
             )
+            if product_lists:
+                print("dwdaw")
+                return render(
+                    request,
+                    self.template_name,
+                    context={"product_lists": product_lists},
+                )
+
+            print('qqqq')
             return render(
                 request,
                 self.template_name,
-                context={"product_lists": product_lists},
+                context={"product_lists": []},
             )
 
         return render(
