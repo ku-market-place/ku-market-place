@@ -21,11 +21,11 @@
                         <button class="btn btn-primary" data-filter=".low">Low Price</button>
                         <button class="btn btn-primary" data-filter=".high">High Price</button>
                     </div>
-                    <form class="form-inline">
-                            <input type="text" class="form-control form-control-sm" placeholder="Search for products..."
-                                aria-label="Search" aria-describedby="searchButton">
+                    <form action="{% url 'ku-market-place:product' %}" class="form-inline">
+                            <input type="search" class="form-control form-control-sm" placeholder="Search for products..."
+                                aria-label="Search" aria-describedby="searchButton" name="search">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-info btn-sm" type="button" id="searchButton">
+                                <button class="btn btn-outline-info btn-sm" type="submit" id="searchButton">
                                     <i class="fa-solid fa-magnifying-glass fa-fade fa-xl" style="color: #0042aa;"></i>
                                 </button>
                             </div>
