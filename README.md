@@ -1,20 +1,14 @@
 # KU Market Place
 
 
-KU Market Place is a wapplication designed for This allows users to purchase a variety of products.
+KU Market Place is a web application designed for This allows users to purchase a variety of products.
 
 
 This app was created as part of the `Database` course at Kasetsart University.
 
 ## Install and Run
 
-### Clone the Repository:
-Clone the repository and using this command on terminal.
-```commandline
-git clone https://github.com/ku-market-place/ku-market-place.git
-```
-
-### Installiation:
+### Installation:
 
 Install and set up a project using the [Installation](Installation.md) guide.
 
