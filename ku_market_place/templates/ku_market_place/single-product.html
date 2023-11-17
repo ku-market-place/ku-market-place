@@ -57,15 +57,16 @@
           <h6>฿{{ product.price }}</h6>
           <p>{{ product.description }}</p>
           <span>{{ product.quantity }} left on stock</span>
-          <form action="" method="post">
+            <form action="" method="post">
+                {% csrf_token %}
 
-            <label for="quantity">Quantity:</label>
-            <input name="quantity" type="quantity" class="quantity-text" id="quantity"
-                onfocus="if(this.value == '1') { this.value = ''; }"
-                onBlur="if(this.value == '') { this.value = '1';}"
-                value="1">
-            <input type="submit" class="button" value="Order Now!">
-          </form>
+                {{ form.item_id }}
+                {{ form.quantity.label_tag }}
+                {{ form.quantity }}
+                {{ form.quantity.errors }}
+
+                <input type="submit" class="button" value="Order Now!">
+            </form>
           <div class="down-content">
             <div class="categories">
               <h6>Category: <span><a href="#">Pants</a>,<a href="#">Women</a>,<a href="#">Lifestyle</a></span></h6>
