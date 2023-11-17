@@ -9,7 +9,7 @@ class Product(models.Model):
     articleType = models.CharField(max_length=50, blank=True)
     baseColour = models.CharField(max_length=50, blank=True)
     season = models.CharField(max_length=20, blank=True)
-    year = models.IntegerField(default=datetime.now().year, blank=True)
+    year = models.IntegerField(default=2023, blank=True)
     usage = models.CharField(max_length=20, blank=True)
     productDisplayName = models.CharField(max_length=255, blank=True)
     productPrice = models.FloatField(default=0.0)
