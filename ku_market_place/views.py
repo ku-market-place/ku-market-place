@@ -69,7 +69,8 @@ class NewProduct(generic.ListView):
 
     def get_queryset(self):
         """Return products list."""
-        return Product.objects.order_by('pub_date')
+        return Product.objects.order_by('-pub_date')
+
 
 class ProductDetailView(generic.DetailView):
     model = Product
