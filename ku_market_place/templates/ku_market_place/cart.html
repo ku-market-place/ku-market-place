@@ -2,5 +2,20 @@
 
 {% load static %}
 {% block content %}
-
+{% if order_items %}
+    {% for order in order_items %}
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ order.product.image.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h3>{{ order.product.name }}</h3>
+                <p>{{ order.product.description }}</p>
+                <p>Price: {{ order.product.price }}</p>
+                <p>Quantity: {{ order.quantity }}</p>
+                <p>Total: {{ order.get_total }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endif %}
 {% endblock %}
