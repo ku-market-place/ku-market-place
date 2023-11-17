@@ -15,4 +15,7 @@ urlpatterns = [
         views.ProductDetailView.as_view(),
         name='single_product'
     ),
+    path('lowest-price', views.ASCProduct.as_view(), name='lowest_price'),
+    path('highest-price', views.DESCProduct.as_view(), name='highest_price'),
+    path('newest-items', views.NewProduct.as_view(), name='newest_items'),
 ]

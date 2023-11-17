@@ -41,6 +41,36 @@ class ProductView(generic.ListView):
             context={"product_lists": self.get_queryset()},
         )
 
+
+class ASCProduct(generic.ListView):
+    """Filter product from the lowest price to the highest price."""
+    template_name = 'ku_market_place/products.html'
+    context_object_name = 'product_lists'
+
+    def get_queryset(self):
+        """Return products list."""
+        return Product.objects.order_by('price')
+
+
+class DESCProduct(generic.ListView):
+    """Filter product from the highest price to the lowest price."""
+    template_name = 'ku_market_place/products.html'
+    context_object_name = 'product_lists'
+
+    def get_queryset(self):
+        """Return products list."""
+        return Product.objects.order_by('-price')
+
+
+class NewProduct(generic.ListView):
+    """Filter product from the newest item to the oldest item."""
+    template_name = 'ku_market_place/products.html'
+    context_object_name = 'product_lists'
+
+    def get_queryset(self):
+        """Return products list."""
+        return Product.objects.order_by('pub_date')
+
 class ProductDetailView(generic.DetailView):
     model = Product
     template_name = 'ku_market_place/single-product.html'
