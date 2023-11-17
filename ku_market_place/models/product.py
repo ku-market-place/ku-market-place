@@ -12,6 +12,7 @@ class Product(models.Model):
     year = models.IntegerField(default=datetime.now().year, blank=True)
     usage = models.CharField(max_length=20, blank=True)
     productDisplayName = models.CharField(max_length=255, blank=True)
+    productPrice = models.FloatField(default=0.0)
 
     def __str__(self):
         return self.productDisplayName
