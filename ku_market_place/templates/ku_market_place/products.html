@@ -3,46 +3,67 @@
 {% load static %}
 
 {% block content %}
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Include Isotope library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
 <div class="featured-page">
-      <div class="container">
+    <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="section-heading">
-              <div class="line-dec"></div>
-              <h1>Featured Items</h1>
+            <div class="col-md-4 col-sm-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h1>Featured Items</h1>
+                </div>
             </div>
-          </div>
-          <div class="col-md-8 col-sm-12">
-            <div id="filters" class="button-group">
-              <button class="btn btn-primary" data-filter="*">All Products</button>
-              <button class="btn btn-primary" data-filter=".new">Newest</button>
-              <button class="btn btn-primary" data-filter=".low">Low Price</button>
-              <button class="btn btn-primary" data-filter=".high">Hight Price</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div id="filters" class="button-group">
+                        <button class="btn btn-primary"><a href="{% url 'ku-market-place:product' %}" style="color: #0042aa;">All Products</a></button>
+                        <button class="btn btn-primary" data-filter=".new">Newest</button>
+                        <button class="btn btn-primary" data-filter=".low">Low Price</button>
+                        <button class="btn btn-primary" data-filter=".high">High Price</button>
+                    </div>
 
-    <div class="featured container no-gutter">
-      <div class="row posts">
-          {% if product_lists %}
-              {% for product in product_lists %}
-                  <div id="{{ product.id }}" class="item new col-md-4">
-                      <div class="featured-item">
-                          <img src="{{ product.image.url }}" alt="">
-                          <a href="{% url 'ku-market-place:single_product' product.id %}">
-                            <h4>{{ product.product_name }}</h4>
-                          </a>
-                          <h6>฿{{ product.price }}</h6>
-                      </div>
-                  </div>
-              {% endfor %}
-          {% else %}
-              <h1>No products are available.</h1>
-          {% endif %}
+                    <form action="{% url 'ku-market-place:product' %}" class="form-inline">
+                        <input type="search" class="form-control form-control-sm" placeholder="Search for products..."
+                            aria-label="Search" aria-describedby="searchButton" name="search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-info btn-sm" type="submit" id="searchButton">
+                                <i class="fa-solid fa-magnifying-glass fa-fade fa-xl" style="color: #0042aa;"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="featured container no-gutter">
+    <div class="row posts">
+        {% if product_lists %}
+            {% for product in product_lists %}
+                <div id="{{ product.id }}" class="item new col-md-4">
+                    <div class="featured-item">
+                        <img src="{{ product.image.url }}" alt="">
+                        <a href="{% url 'ku-market-place:single_product' product.id %}">
+                            <h4>{{ product.product_name }}</h4>
+                        </a>
+                        <h6>฿{{ product.price }}</h6>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="item new col-md-12 text-center">
+                <h1 style="color: #333; font-size: 24px; margin-top: 20px;">No products are available.</h1>
+                <p style="color: #666; font-size: 16px;">Try a different search or check back later for new arrivals.</p>
+                <br>
+            </div>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}
