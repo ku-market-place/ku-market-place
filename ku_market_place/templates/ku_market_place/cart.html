@@ -1,21 +1,40 @@
 {% extends "base.html" %}
-
-{% load static %}
+<head>
+    <title>Cart</title>
+    <!-- Add this to the head of your HTML document -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlXp5cy9OKtWFeUd3Lk6b0l3gGiiV6UOO2ttWBRW7fl7" crossorigin="anonymous">
+</head>
 {% block content %}
-{% if order_items %}
-    {% for order in order_items %}
-        <div class="row">
-            <div class="col-md-4">
-                <img src="{{ order.product.image.url }}" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <h3>{{ order.product.name }}</h3>
-                <p>{{ order.product.description }}</p>
-                <p>Price: {{ order.product.price }}</p>
-                <p>Quantity: {{ order.quantity }}</p>
-                <p>Total: {{ order.get_total }}</p>
-            </div>
-        </div>
-    {% endfor %}
-{% endif %}
+    <div class="container mt-4">
+        <h1 style="margin-top: 60px;">Your Cart</h1>
+
+        {% if order_items %}
+            {% for order in order_items %}
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="{{ order.product.image.url }}" alt="{{ order.product.name }}" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>{{ order.product.name }}</h3>
+                        <p>{{ order.product.description }}</p>
+                        <p>Price: {{ order.product.price }}</p>
+                        <p>Quantity: {{ order.quantity }}</p>
+                        <p>Total: {{ order.get_total }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
+          {% csrf_token %}
+
+          <div class="form-group">
+            <label for="shipping_address">Shipping Address:</label>
+            <input type="text" name="shipping_address" id="shipping_address" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-shopping-cart"></i> Checkout
+          </button>
+        </form>
+    </div>
 {% endblock %}

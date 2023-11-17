@@ -6,6 +6,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from ku_market_place.forms import CartForm
 
 
 class ProductView(generic.ListView):
@@ -90,6 +91,19 @@ class CartDailView(View):
             # If there's no order, set order_items to an empty queryset or handle it accordingly
             order_items = OrderItem.objects.none()
         return render(request, 'ku_market_place/cart.html', {'order_items': order_items})
+
+    def post(self, request, *args, **kwargs):
+        form = CartForm(request.POST)
+
+        if form.is_valid():
+            # Assuming you have a function to process the form data and create/update the order
+            # You might need to adjust this based on your actual model relationships and requirements
+            print("form is valid")
+
+            return render(request, 'ku_market_place/order_list.html')  # Redirect to the order list or another page
+        else:
+            # If the form is not valid, re-render the cart page with the validation errors
+            return render(request, 'ku_market_place/cart.html', {'form': form})
 
 
 class AddToCartView(View):
