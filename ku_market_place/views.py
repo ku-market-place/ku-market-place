@@ -1,10 +1,8 @@
 from django.http import Http404
-from django.urls import reverse
 from django.views import generic
 from ku_market_place.models import Product
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 
@@ -20,7 +18,7 @@ class ProductView(generic.ListView):
         search_product = request.GET.get('search')
         if search_product:
             product_lists = Product.objects.filter(
-                Q(product_name__icontains=search_product)
+                Q(productDisplayName__icontains=search_product)
             )
             if product_lists:
                 return render(
@@ -40,6 +38,7 @@ class ProductView(generic.ListView):
             self.template_name,
             context={"product_lists": self.get_queryset()},
         )
+
 
 class ProductDetailView(generic.DetailView):
     model = Product
