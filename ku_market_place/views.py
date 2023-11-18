@@ -1,12 +1,11 @@
 from django.http import Http404
-from django.urls import reverse
 from django.views import generic, View
-from ku_market_place.models import Product, Order, OrderItem, Customer
+from ku_market_place.models import Product, Order, OrderItem
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from ku_market_place.filters import ProductFilter
 from ku_market_place.forms import CartForm
-
+import csv
 
 class ProductView(generic.ListView):
     queryset = Product.objects.all()
@@ -44,10 +43,22 @@ class ProductDetailView(generic.DetailView):
                 f"Product ID {key} does not exist.❗️")
             return redirect("ku-market-place:product")
 
+        image = ""
+        with open('ku_market_place/data/images.csv', 'r') as image_csv:
+            csv_reader = csv.DictReader(image_csv)
+            for row in csv_reader:
+                file = row['filename'].replace('.jpg', '')
+                if file == str(key):
+                    image = row['link']
+                    break
+
         return render(
             request,
             self.template_name,
-            context={"product": product},
+            context={
+                "product": product,
+                "image": image
+            },
         )
 
 
