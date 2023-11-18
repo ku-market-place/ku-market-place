@@ -9,3 +9,6 @@ class Order(models.Model):
     order_item_id = models.ForeignKey(OrderItem, on_delete=models.CASCADE)
     status = models.BooleanField(default=False)
     total_amount = models.IntegerField(default=0)
+
+    def __str__(self):
+        return str(self.id)

@@ -15,24 +15,19 @@
                         <img src="{{ order.product.image.url }}" alt="{{ order.product.name }}" class="img-fluid">
                     </div>
                     <div class="col-md-8">
-                        <h3>{{ order.product.name }}</h3>
+                        <h3>{{ order.product.productDisplayName }}</h3>
                         <p>{{ order.product.description }}</p>
-                        <p>Price: {{ order.product.price }}</p>
+                        <p>Price: {{ order.product.productPrice }}</p>
                         <p>Quantity: {{ order.quantity }}</p>
-                        <p>Total: {{ order.get_total }}</p>
+                        <p>Total: {{ order.total_amount }}</p>
                     </div>
                 </div>
             {% endfor %}
         {% endif %}
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
-          {% csrf_token %}
-
-          <div class="form-group">
-            <label for="shipping_address">Shipping Address:</label>
-            <input type="text" name="shipping_address" id="shipping_address" class="form-control" required>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">
             <i class="fas fa-shopping-cart"></i> Checkout
           </button>
         </form>

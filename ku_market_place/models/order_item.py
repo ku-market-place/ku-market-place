@@ -4,5 +4,9 @@ from .product import Product
 
 class OrderItem(models.Model):
 
-    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
+    total_amount = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.product.productDisplayName

@@ -54,25 +54,22 @@
           <li><strong>Usage:</strong> {{ product.usage }}</li>
           <li><strong>Year of Production:</strong> {{ product.year }}</li>
         </ul>
-        <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
-        <form action="" method="post">
-          <label for="quantity">Quantity:</label>
-          <input name="quantity" type="quantity" class="quantity-text" id="quantity"
-            onfocus="if(this.value == '1') { this.value = ''; }"
-            onBlur="if(this.value == '') { this.value = '1';}"
-            value="1">
-          <input type="submit" class="button" value="Own It Now!">
-        </form>
-        <div class="down-content">
-          <div class="categories">
-            <h6>Explore More:
-              <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
+            <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
+            <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="button" value="Add to Cart">
+            </form>
+            <div class="down-content">
+              <div class="categories">
+                <h6>Explore More:
+                  <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 </div>
 
 <script language="text/Javascript">
@@ -84,6 +81,24 @@ function clearField(t){
     t.style.color='#fff';
   }
 }
+    document.addEventListener("DOMContentLoaded", function() {
+      var quantityInput = document.getElementById("id_quantity");  // Assuming the id is "id_quantity"
+      var originalColor = quantityInput.style.color;
+
+      quantityInput.addEventListener("focus", function() {
+        if (this.value === '1') {
+          this.value = '';
+          this.style.color = originalColor;
+        }
+      });
+
+      quantityInput.addEventListener("blur", function() {
+        if (this.value === '') {
+          this.value = '1';
+          this.style.color = originalColor;
+        }
+      });
+    });
 </script>
 
 {% endblock %}
