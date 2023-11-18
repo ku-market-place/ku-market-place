@@ -15,6 +15,8 @@ class ProductView(generic.ListView):
         return Product.objects.all()
 
     def get(self, request, *args, **kwargs):
+        gender = (Product.objects.values_list("gender", flat=True)
+                  .distinct().order_by("gender"))
         search_product = request.GET.get('search')
         if search_product:
             product_lists = Product.objects.filter(
@@ -24,19 +26,28 @@ class ProductView(generic.ListView):
                 return render(
                     request,
                     self.template_name,
-                    context={"product_lists": product_lists},
+                    context={
+                        "product_lists": product_lists,
+                        "gender_lists": gender
+                    },
                 )
 
             return render(
                 request,
                 self.template_name,
-                context={"product_lists": []},
+                context={
+                    "product_lists": [],
+                    "gender_lists": gender
+                },
             )
 
         return render(
             request,
             self.template_name,
-            context={"product_lists": self.get_queryset()},
+            context={
+                "product_lists": self.get_queryset(),
+                "gender_lists": gender
+            }
         )
 
 

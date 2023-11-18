@@ -3,10 +3,10 @@
 {% load static %}
 
 {% block content %}
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<!-- Include Isotope library -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
 <div class="featured-page">
@@ -25,6 +25,16 @@
                         <button class="btn btn-primary" data-filter=".new">Newest</button>
                         <button class="btn btn-primary" data-filter=".low">Low Price</button>
                         <button class="btn btn-primary" data-filter=".high">High Price</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gender
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                            {% for gender in gender_lists %}
+                                <li><a class="dropdown-item gender-option" href="#" data-gender="{{ gender }}">{{ gender }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </div>
 
                     <form action="{% url 'ku-market-place:product' %}" class="form-inline">
@@ -65,5 +75,13 @@
         {% endif %}
     </div>
 </div>
+
+<script>
+  // Update Gender button text when an option is selected
+  $('.gender-option').on('click', function() {
+    var selectedGender = $(this).data('gender');
+    $('#genderDropdown').text(selectedGender);
+  });
+</script>
 
 {% endblock %}
