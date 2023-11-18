@@ -50,9 +50,9 @@
                     <div class="featured-item">
                         <img src="{{ product.image.url }}" alt="">
                         <a href="{% url 'ku-market-place:single_product' product.id %}">
-                            <h4>{{ product.product_name }}</h4>
+                            <h4>{{ product.productDisplayName }}</h4>
                         </a>
-                        <h6>฿{{ product.price }}</h6>
+                        <h6>฿{{ product.productPrice }}</h6>
                     </div>
                 </div>
             {% endfor %}

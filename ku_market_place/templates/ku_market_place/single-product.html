@@ -3,90 +3,87 @@
 {% load static %}
 
 {% block content %}
-<title>{{ product.product_name }}</title>
+  <title>{{ product.product_name }}</title>
 
-<!-- Single Starts Here -->
 <div class="single-product">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-heading">
-          <div class="line-dec"></div>
-          <h1>{{ product.product_name }}</h1>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-heading">
+        <div class="line-dec"></div>
+        <h1>{{ product.productDisplayName }}</h1>
       </div>
-      <div class="col-md-6">
-        <div class="product-slider">
-          <div id="slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="assets/images/big-01.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/big-02.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/big-03.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/big-04.jpg" />
-              </li>
-            </ul>
+    </div>
+    <div class="col-md-6">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'assets/images/big-01.jpg' %}" class="d-block w-100" alt="{{ product.productDisplayName }} Image 1">
           </div>
-          <div id="carousel" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="assets/images/thumb-01.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/thumb-02.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/thumb-03.jpg" />
-              </li>
-              <li>
-                <img src="assets/images/thumb-04.jpg" />
-              </li>
-            </ul>
+          <div class="carousel-item">
+            <img src="{% static 'assets/images/big-02.jpg' %}" class="d-block w-100" alt="{{ product.productDisplayName }} Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'assets/images/big-03.jpg' %}" class="d-block w-100" alt="{{ product.productDisplayName }} Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'assets/images/big-04.jpg' %}" class="d-block w-100" alt="{{ product.productDisplayName }} Image 4">
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="col-md-6">
-        <div class="right-content">
-          <h4>{{ product.product_name }}</h4>
-          <h6>฿{{ product.price }}</h6>
-          <p>{{ product.description }}</p>
-          <span>{{ product.quantity }} left on stock</span>
-            <form action="" method="post">
-                {% csrf_token %}
-
-                {{ form.item_id }}
-                {{ form.quantity.label_tag }}
-                {{ form.quantity }}
-                {{ form.quantity.errors }}
-
-                <input type="submit" class="button" value="Order Now!">
-            </form>
-          <div class="down-content">
-            <div class="categories">
-              <h6>Category: <span><a href="#">Pants</a>,<a href="#">Women</a>,<a href="#">Lifestyle</a></span></h6>
-            </div>
+    </div>
+    <div class="col-md-6">
+      <div class="right-content">
+        <h3>Elevate Your Style</h3>
+        <h4>{{ product.productDisplayName }}</h4>
+        <h6>฿{{ product.productPrice }}</h6>
+        <p>Discover a piece that speaks to your individuality:</p>
+        <ul>
+          <li><strong>Gender:</strong> {{ product.gender }}</li>
+          <li><strong>Article Type:</strong> {{ product.articleType }}</li>
+          <li><strong>Color:</strong> {{ product.baseColour }}</li>
+          <li><strong>Season:</strong> {{ product.season }}</li>
+          <li><strong>Usage:</strong> {{ product.usage }}</li>
+          <li><strong>Year of Production:</strong> {{ product.year }}</li>
+        </ul>
+        <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
+        <form action="" method="post">
+          <label for="quantity">Quantity:</label>
+          <input name="quantity" type="quantity" class="quantity-text" id="quantity"
+            onfocus="if(this.value == '1') { this.value = ''; }"
+            onBlur="if(this.value == '') { this.value = '1';}"
+            value="1">
+          <input type="submit" class="button" value="Own It Now!">
+        </form>
+        <div class="down-content">
+          <div class="categories">
+            <h6>Explore More:
+              <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<script language = "text/Javascript">
-  cleared[0] = cleared[1] = cleared[2] = 0;
-  function clearField(t){                   //declaring the array outside of the
-  if(! cleared[t.id]){                      // function makes it static and global
-      cleared[t.id] = 1;  // you could use true and false, but that's more typing
-      t.value='';         // with more chance of typos
-      t.style.color='#fff';
-      }
+<script language="text/Javascript">
+cleared[0] = cleared[1] = cleared[2] = 0;
+function clearField(t){
+  if(! cleared[t.id]){
+    cleared[t.id] = 1;
+    t.value='';
+    t.style.color='#fff';
   }
+}
 </script>
 
 {% endblock %}
