@@ -12,7 +12,7 @@ class ProductView(generic.ListView):
     context_object_name = 'product_lists'
 
     def __init__(self, **kwargs):
-        super().__init__(kwargs)
+        super().__init__(**kwargs)
         self.filterset = None
 
     def get_queryset(self):

@@ -11,6 +11,11 @@ def get_choice(choices):
 
 
 class ProductFilter(django_filters.FilterSet):
+    productDisplayName = django_filters.CharFilter(
+        label='Product Name',
+        lookup_expr='icontains',
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
     productPrice = django_filters.RangeFilter()
     gender = django_filters.MultipleChoiceFilter(
         choices=get_choice("gender"),
@@ -45,10 +50,10 @@ class ProductFilter(django_filters.FilterSet):
         widget=forms.CheckboxSelectMultiple,
     )
 
-
     class Meta:
         model = Product
         fields = {
             "productDisplayName": ["icontains"],
         }
+
 

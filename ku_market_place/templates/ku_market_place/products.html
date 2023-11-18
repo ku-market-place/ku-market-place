@@ -25,36 +25,170 @@
                         <button class="btn btn-primary" data-filter=".low">Low Price</button>
                         <button class="btn btn-primary" data-filter=".high">High Price</button>
                     </div>
-                    <div class="dropdown">
-                        <form action="{% url 'ku-market-place:product' %}">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                Gender
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="genderDropdown">
-                                {% for gender in gender_lists %}
-                                    <li>
-                                        <a class="dropdown-item gender-option" href="#" data-gender="{{ gender }}" type="submit" name="gender">{{ gender }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                            <input type="hidden" name="gender" id="selectedGender" value="">
-                        </form>
-                    </div>
-
-                    <form action="{% url 'ku-market-place:product' %}" class="form-inline">
-                        <input type="search" class="form-control form-control-sm" placeholder="Search for products..."
-                            aria-label="Search" aria-describedby="searchButton" name="search">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-info btn-sm" type="submit" id="searchButton">
-                                <i class="fa-solid fa-magnifying-glass fa-fade fa-xl" style="color: #0042aa;"></i>
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container my-3">
+    <form method="get" action="{% url 'ku-market-place:product' %}">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="{{ form.productDisplayName.id_for_label }}" class="form-label">Product Name</label>
+                            {{ form.productDisplayName }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="{{ form.productPrice.id_for_label }}" class="form-label">Product Price</label>
+                            <div class="input-group">
+                                {{ form.productPrice }}
+                                <span class="input-group-text">฿</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Dropdown menu for Gender -->
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Gender
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.gender %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Dropdown menu for Gender -->
+                        <div class="mb-3">
+                            <label class="form-label">Category 1</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Master Category
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.masterCategory %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Category 2</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Sub Category
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.subCategory %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Article</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Article Type
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.articleType %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Colour</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Colour
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.baseColour %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Season</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Season
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.season %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Usage</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Usage
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.usage %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Year of Production</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="genderDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Year
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="genderDropdown">
+                                    {% for checkbox in form.year %}
+                                        <li class="form-check form-check-inline">
+                                            {{ checkbox }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-3">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass fa-fade fa-xl"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
 
 <div class="featured container no-gutter">
     <div class="row posts">
@@ -92,19 +226,4 @@
         {% endif %}
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-        $('ul.dropdown-menu a').on('click', function(e) {
-            e.preventDefault();
-            var selectedGender = $(this).data('gender');
-            $('#genderDropdown').text(selectedGender);
-            $('#selectedGender').val(selectedGender);
-            $('form').submit();
-        });
-    });
-</script>
-
-
-
 {% endblock %}
