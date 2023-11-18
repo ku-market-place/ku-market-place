@@ -4,7 +4,6 @@ from django.views import generic, View
 from ku_market_place.models import Product, Order, OrderItem, Customer
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from ku_market_place.forms import CartForm
 
@@ -21,7 +20,7 @@ class ProductView(generic.ListView):
         search_product = request.GET.get('search')
         if search_product:
             product_lists = Product.objects.filter(
-                Q(product_name__icontains=search_product)
+                Q(productDisplayName__icontains=search_product)
             )
             if product_lists:
                 print("has product_lists")
