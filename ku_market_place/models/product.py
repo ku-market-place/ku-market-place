@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 
 
 class Product(models.Model):
@@ -13,6 +12,7 @@ class Product(models.Model):
     usage = models.CharField(max_length=20, blank=True)
     productDisplayName = models.CharField(max_length=255, blank=True)
     productPrice = models.FloatField(default=0.0)
+    quantity = models.IntegerField(default=100)
 
     def __str__(self):
         return self.productDisplayName
