@@ -11,44 +11,33 @@ class ProductView(generic.ListView):
     context_object_name = 'product_lists'
 
     def get_queryset(self):
-        """Return products list."""
-        return Product.objects.all()
+        """Return filtered products list."""
+        queryset = Product.objects.all()
+        search_product = self.request.GET.get('search')
+        gender_filter = self.request.GET.get('gender')
+        print('search_product', search_product)
+        print('gender ', gender_filter)
 
-    def get(self, request, *args, **kwargs):
-        gender = (Product.objects.values_list("gender", flat=True)
-                  .distinct().order_by("gender"))
-        search_product = request.GET.get('search')
         if search_product:
-            product_lists = Product.objects.filter(
+            queryset = queryset.filter(
                 Q(productDisplayName__icontains=search_product)
             )
-            if product_lists:
-                return render(
-                    request,
-                    self.template_name,
-                    context={
-                        "product_lists": product_lists,
-                        "gender_lists": gender
-                    },
-                )
 
-            return render(
-                request,
-                self.template_name,
-                context={
-                    "product_lists": [],
-                    "gender_lists": gender
-                },
-            )
+        if gender_filter:
+            queryset = queryset.filter(gender=gender_filter)
 
-        return render(
-            request,
-            self.template_name,
-            context={
-                "product_lists": self.get_queryset(),
-                "gender_lists": gender
-            }
-        )
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['gender_lists'] = Product.objects.values_list("gender", flat=True).distinct().order_by("gender")
+        return context
+
+    def get(self, request, *args, **kwargs):
+        self.object_list = self.get_queryset()
+        context = self.get_context_data()
+        return self.render_to_response(context)
+
 
 
 class ProductDetailView(generic.DetailView):
