@@ -3,41 +3,29 @@ from django.views import generic
 from ku_market_place.models import Product
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.db.models import Q
+from ku_market_place.filters import ProductFilter
 
 
 class ProductView(generic.ListView):
+    queryset = Product.objects.all()
     template_name = 'ku_market_place/products.html'
     context_object_name = 'product_lists'
 
+    def __init__(self, **kwargs):
+        super().__init__(kwargs)
+        self.filterset = None
+
     def get_queryset(self):
         """Return filtered products list."""
-        queryset = Product.objects.all()
-        search_product = self.request.GET.get('search')
-        gender_filter = self.request.GET.get('gender')
-        print('search_product', search_product)
-        print('gender ', gender_filter)
-
-        if search_product:
-            queryset = queryset.filter(
-                Q(productDisplayName__icontains=search_product)
-            )
-
-        if gender_filter:
-            queryset = queryset.filter(gender=gender_filter)
-
-        return queryset
+        queryset = super().get_queryset()
+        self.filterset = ProductFilter(self.request.GET, queryset=queryset)
+        return self.filterset.qs
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['gender_lists'] = Product.objects.values_list("gender", flat=True).distinct().order_by("gender")
+        context['form'] = self.filterset.form
         return context
-
-    def get(self, request, *args, **kwargs):
-        self.object_list = self.get_queryset()
-        context = self.get_context_data()
-        return self.render_to_response(context)
-
 
 
 class ProductDetailView(generic.DetailView):
