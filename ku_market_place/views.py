@@ -1,9 +1,11 @@
 from django.http import Http404
-from django.views import generic
-from ku_market_place.models import Product
+from django.urls import reverse
+from django.views import generic, View
+from ku_market_place.models import Product, Order, OrderItem, Customer
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from ku_market_place.filters import ProductFilter
+from ku_market_place.forms import CartForm
 
 
 class ProductView(generic.ListView):
@@ -59,3 +61,33 @@ def contact(request):
 
 def order_list(request):
     return render(request, 'ku_market_place/order_list.html')
+
+
+class CartDailView(View):
+    def get(self, request, *args, **kwargs):
+        order = Order.objects.filter(customer_id=request.user.id)
+        if order:
+            # Get all order items related to the order
+            order_items = OrderItem.objects.filter(order_item_id=order.id)
+        else:
+            # If there's no order, set order_items to an empty queryset or handle it accordingly
+            order_items = OrderItem.objects.none()
+        return render(request, 'ku_market_place/cart.html', {'order_items': order_items})
+
+    def post(self, request, *args, **kwargs):
+        form = CartForm(request.POST)
+
+        if form.is_valid():
+            # Assuming you have a function to process the form data and create/update the order
+            # You might need to adjust this based on your actual model relationships and requirements
+            print("form is valid")
+
+            return render(request, 'ku_market_place/order_list.html')  # Redirect to the order list or another page
+        else:
+            # If the form is not valid, re-render the cart page with the validation errors
+            return render(request, 'ku_market_place/cart.html', {'form': form})
+
+
+class AddToCartView(View):
+    def post(self, request, *args, **kwargs):
+        return render(request, 'ku_market_place/cart.html')
