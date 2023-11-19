@@ -11,10 +11,10 @@ class CartForm(forms.Form):
         min_value=1,
         max_value=100,
         required=True,
-        widget=forms.NumberInput(
-            attrs={
-                "class": "form-control",
-                "placeholder": "Quantity",
-            }
-        ),
+        widget=forms.NumberInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Quantity',
+            'min': 1,
+            'max': 100,
+        })
     )

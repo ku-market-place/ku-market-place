@@ -50,18 +50,65 @@
             </div>
         </div>
     </div>
+    <div class="col-md-6">
+      <div class="right-content">
+        <h3>Elevate Your Style</h3>
+        <h4>{{ product.productDisplayName }}</h4>
+        <h6>฿{{ product.productPrice }}</h6>
+        <p>Discover a piece that speaks to your individuality:</p>
+        <ul>
+          <li><strong>Gender:</strong> {{ product.gender }}</li>
+          <li><strong>Article Type:</strong> {{ product.articleType }}</li>
+          <li><strong>Color:</strong> {{ product.baseColour }}</li>
+          <li><strong>Season:</strong> {{ product.season }}</li>
+          <li><strong>Usage:</strong> {{ product.usage }}</li>
+          <li><strong>Year of Production:</strong> {{ product.year }}</li>
+        </ul>
+            <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
+            <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="button" value="Add to Cart">
+            </form>
+            <div class="down-content">
+              <div class="categories">
+                <h6>Explore More:
+                  <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 <script language="text/Javascript">
-    cleared[0] = cleared[1] = cleared[2] = 0;
+cleared[0] = cleared[1] = cleared[2] = 0;
+function clearField(t){
+  if(! cleared[t.id]){
+    cleared[t.id] = 1;
+    t.value='';
+    t.style.color='#fff';
+  }
+}
+    document.addEventListener("DOMContentLoaded", function() {
+      var quantityInput = document.getElementById("id_quantity");  // Assuming the id is "id_quantity"
+      var originalColor = quantityInput.style.color;
 
-    function clearField(t) {
-        if (!cleared[t.id]) {
-            cleared[t.id] = 1;
-            t.value = '';
-            t.style.color = '#fff';
+      quantityInput.addEventListener("focus", function() {
+        if (this.value === '1') {
+          this.value = '';
+          this.style.color = originalColor;
         }
-    }
+      });
+
+      quantityInput.addEventListener("blur", function() {
+        if (this.value === '') {
+          this.value = '1';
+          this.style.color = originalColor;
+        }
+      });
+    });
 </script>
 
 {% endblock %}

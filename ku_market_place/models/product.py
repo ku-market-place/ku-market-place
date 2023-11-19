@@ -18,6 +18,21 @@ class Product(models.Model):
     quantity = models.IntegerField(default=100)
     image = models.CharField(max_length=300, blank=True)
 
+    def description(self):
+        """
+        Return a formatted string containing all description attributes of the Product.
+        """
+        description = f"Gender: {self.gender}\n"
+        description += f"Master Category: {self.masterCategory}\n"
+        description += f"Sub Category: {self.subCategory}\n"
+        description += f"Article Type: {self.articleType}\n"
+        description += f"Base Colour: {self.baseColour}\n"
+        description += f"Season: {self.season}\n"
+        description += f"Year: {self.year}\n"
+        description += f"Usage: {self.usage}\n"
+
+        return description
+
     def __str__(self):
         """Return product name."""
         return self.productDisplayName
