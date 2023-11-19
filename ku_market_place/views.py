@@ -90,7 +90,11 @@ class CartDailView(View):
             order_items = order.order_item_id.all()
         else:
             order_items = OrderItem.objects.none()
-        return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
+        try:
+            form.fields['new_shipping_address'].initial = customer.address
+            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
+        except Customer.DoesNotExist:
+            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
 
     def post(self, request, *args, **kwargs):
         form = CheckOutForm(request.POST)
@@ -98,6 +102,10 @@ class CartDailView(View):
             customer = Customer.objects.get(user=request.user)
             order = Order.objects.filter(customer_id=customer.id).last()
             order.status = random.choice(['Shipping', 'Delivery', 'Complete'])
+            order.save()
+            order = Order.objects.create(
+                customer_id=customer,
+            )
             order.save()
             return redirect('ku-market-place:view_cart')
         return redirect('ku-market-place:view_cart')
@@ -128,12 +136,12 @@ class AddToCartView(View):
             order_item.save()
             try:
                 customer = Customer.objects.get(user=request.user)
-                order = Order.objects.get(customer_id=customer.id)
+                order = Order.objects.filter(customer_id=customer.id).last()
                 order.order_item_id.add(order_item)
                 order.save()
             except Order.DoesNotExist:
                 order = Order.objects.create(
-                    customer=Customer.objects.get(user=request.user),
+                    customer_id=Customer.objects.get(user=request.user.id),
                     order_item_id=order_item,
                     total_amount=order_item.total_amount,
                 )

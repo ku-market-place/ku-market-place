@@ -26,9 +26,21 @@
         {% endif %}
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
             {% csrf_token %}
-
+            <div class="flex-container">
+                <h2>Shipping Address</h2>
             {{ form.new_shipping_address.label_tag }}
             {{ form.new_shipping_address }}
+            </div>
+            <style>
+                .flex-container {
+                    display: flex;
+                    flex-direction: column;  /* or row, depending on your layout preference */
+                }
+
+                .flex-container h2 {
+                    margin-bottom: 10px;  /* Optional: Adjust margin as needed */
+                }
+            </style>
 
             {{ form.payment_method.label_tag }}
             {{ form.payment_method }}
