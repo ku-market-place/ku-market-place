@@ -8,7 +8,7 @@ import random
 from django.views import generic, View
 
 from ku_market_place.filters import ProductFilter
-from ku_market_place.models import Product, Order, OrderItem
+from ku_market_place.models import Product, Order, OrderItem, Customer
 
 
 class ProductView(generic.ListView):
@@ -79,7 +79,12 @@ class CartDailView(View):
     def get(self, request, *args, **kwargs):
         print(request.user.id)
         form = CheckOutForm()
-        customer = Customer.objects.get(user=request.user)
+        try:
+            customer = Customer.objects.get(user=request.user)
+        except Customer.DoesNotExist:
+            customer = Customer.objects.create(
+                user=request.user,
+            )
         order = Order.objects.filter(customer_id=customer.id).last()
         if order:
             order_items = order.order_item_id.all()
