@@ -1,7 +1,10 @@
+"""Module contains the Customer model."""
 from django.db import models
 
 
 class Customer(models.Model):
+    """Class for customer table."""
+
     firstname = models.CharField(max_length=200)
     lastname = models.CharField(max_length=200)
     email = models.EmailField(max_length=254)

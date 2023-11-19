@@ -4,12 +4,14 @@ from django import forms
 
 
 def get_choice(choices):
+    """Return choices for each filter."""
     choice_values = Product.objects.values_list(choices, flat=True).distinct().order_by(choices)
     choices = [(choice, choice) for choice in choice_values]
     return choices
 
 
 class ProductFilter(django_filters.FilterSet):
+    """Filter for products."""
     productDisplayName = django_filters.CharFilter(
         label='Product Name',
         lookup_expr='icontains',
@@ -63,6 +65,7 @@ class ProductFilter(django_filters.FilterSet):
     )
 
     def filter_by_price(self, queryset, name, value):
+        """Return queryset ordered by price."""
         if value == 'asc':
             return queryset.order_by('productPrice')
         elif value == 'desc':
