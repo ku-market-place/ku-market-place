@@ -4,13 +4,14 @@ from django import forms
 
 
 def get_choice(choices):
+    """Return choices for each filter."""
     choice_values = Product.objects.values_list(choices, flat=True).distinct().order_by(choices)
     choices = [(choice, choice) for choice in choice_values]
-
     return choices
 
 
 class ProductFilter(django_filters.FilterSet):
+    """Filter for products."""
     productDisplayName = django_filters.CharFilter(
         label='Product Name',
         lookup_expr='icontains',
@@ -50,10 +51,29 @@ class ProductFilter(django_filters.FilterSet):
         widget=forms.CheckboxSelectMultiple,
     )
 
+    PRICE_CHOICES = [
+        ('', 'Any'),
+        ('asc', 'Ascending'),
+        ('desc', 'Descending'),
+    ]
+
+    order_by_price = django_filters.ChoiceFilter(
+        choices=PRICE_CHOICES,
+        method='filter_by_price',
+        label='Order by Price',
+        widget=forms.Select(attrs={'class': 'form-select'})
+    )
+
+    def filter_by_price(self, queryset, name, value):
+        """Return queryset ordered by price."""
+        if value == 'asc':
+            return queryset.order_by('productPrice')
+        elif value == 'desc':
+            return queryset.order_by('-productPrice')
+        return queryset
+
     class Meta:
         model = Product
         fields = {
             "productDisplayName": ["icontains"],
         }
-
-

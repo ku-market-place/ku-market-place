@@ -1,18 +1,23 @@
-from django.http import Http404
-from django.views import generic, View
-from ku_market_place.models import Product, Order, OrderItem
-from django.shortcuts import render, get_object_or_404, redirect
+"""Views for ku_market_place app."""
 from django.contrib import messages
+from django.http import Http404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.views import generic, View
+
 from ku_market_place.filters import ProductFilter
 from ku_market_place.forms import CartForm
-import csv
+from ku_market_place.models import Product, Order, OrderItem
+
 
 class ProductView(generic.ListView):
+    """View for products."""
+
     queryset = Product.objects.all()
     template_name = 'ku_market_place/products.html'
     context_object_name = 'product_lists'
 
     def __init__(self, **kwargs):
+        """Initialize ProductView."""
         super().__init__(**kwargs)
         self.filterset = None
 
@@ -23,48 +28,20 @@ class ProductView(generic.ListView):
         return self.filterset.qs
 
     def get_context_data(self, **kwargs):
+        """Return context data."""
         context = super().get_context_data(**kwargs)
-        context['gender_lists'] = Product.objects.values_list("gender", flat=True).distinct().order_by("gender")
         context['form'] = self.filterset.form
         return context
 
 
-
-class ASCProduct(generic.ListView):
-    """Filter product from the lowest price to the highest price."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('price')
-
-
-class DESCProduct(generic.ListView):
-    """Filter product from the highest price to the lowest price."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('-price')
-
-
-class NewProduct(generic.ListView):
-    """Filter product from the newest item to the oldest item."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('-pub_date')
-
-
 class ProductDetailView(generic.DetailView):
+    """View for single product."""
+
     model = Product
     template_name = 'ku_market_place/single-product.html'
 
     def get(self, request, *args, **kwargs):
+        """Return single product."""
         try:
             key = kwargs["pk"]
             product = get_object_or_404(Product, pk=key)
@@ -73,15 +50,6 @@ class ProductDetailView(generic.DetailView):
                 request,
                 f"Product ID {key} does not exist.❗️")
             return redirect("ku-market-place:product")
-
-        image = ""
-        with open('ku_market_place/data/images.csv', 'r') as image_csv:
-            csv_reader = csv.DictReader(image_csv)
-            for row in csv_reader:
-                file = row['filename'].replace('.jpg', '')
-                if file == str(key):
-                    image = row['link']
-                    break
 
         return render(
             request,
