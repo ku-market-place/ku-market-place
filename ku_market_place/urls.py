@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 from django.views.generic import RedirectView
+from django.contrib.auth.decorators import login_required
 
 
 app_name = "ku-market-place"
@@ -15,6 +16,6 @@ urlpatterns = [
         views.ProductDetailView.as_view(),
         name='single_product'
     ),
-    path('cart/', views.CartDailView.as_view(), name='view_cart'),
-    path('add/<int:product_id>/', views.AddToCartView.as_view(), name='add_to_cart'),
+    path('cart/', login_required(views.CartDailView.as_view(), login_url="google_login"), name='view_cart'),
+    path('add/<int:product_id>/', login_required(views.AddToCartView.as_view(), login_url="google_login"), name='add_to_cart'),
 ]
