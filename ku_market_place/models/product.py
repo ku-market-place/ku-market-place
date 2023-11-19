@@ -13,6 +13,7 @@ class Product(models.Model):
     productDisplayName = models.CharField(max_length=255, blank=True)
     productPrice = models.FloatField(default=0.0)
     quantity = models.IntegerField(default=100)
+    image = models.CharField(max_length=300, blank=True)
 
     def __str__(self):
         return self.productDisplayName
