@@ -1,56 +1,49 @@
+"""Views for ku_market_place app."""
+from django.contrib import messages
 from django.http import Http404
-from django.urls import reverse
-from django.views import generic, View
-from ku_market_place.models import Product, Order, OrderItem, Customer
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.db.models import Q
 from ku_market_place.forms import CartForm, CheckOutForm
 import random
+from django.views import generic, View
+
+from ku_market_place.filters import ProductFilter
+from ku_market_place.models import Product, Order, OrderItem
 
 
 class ProductView(generic.ListView):
+    """View for products."""
+
+    queryset = Product.objects.all()
     template_name = 'ku_market_place/products.html'
     context_object_name = 'product_lists'
 
+    def __init__(self, **kwargs):
+        """Initialize ProductView."""
+        super().__init__(**kwargs)
+        self.filterset = None
+
     def get_queryset(self):
-        """Return products list."""
-        return Product.objects.all()
+        """Return filtered products list."""
+        queryset = super().get_queryset()
+        self.filterset = ProductFilter(self.request.GET, queryset=queryset)
+        return self.filterset.qs
 
-    def get(self, request, *args, **kwargs):
-        search_product = request.GET.get('search')
-        if search_product:
-            product_lists = Product.objects.filter(
-                Q(productDisplayName__icontains=search_product)
-            )
-            if product_lists:
-                print("has product_lists")
-                return render(
-                    request,
-                    self.template_name,
-                    context={"product_lists": product_lists},
-                )
-            print("product_lists is empty")
-
-            return render(
-                request,
-                self.template_name,
-                context={"product_lists": []},
-
-            )
-        print("search_product is empty")
-        return render(
-            request,
-            self.template_name,
-            context={"product_lists": self.get_queryset()},
-        )
+    def get_context_data(self, **kwargs):
+        """Return context data."""
+        context = super().get_context_data(**kwargs)
+        context['form'] = self.filterset.form
+        return context
 
 
 class ProductDetailView(generic.DetailView):
+    """View for single product."""
+
     model = Product
     template_name = 'ku_market_place/single-product.html'
 
     def get(self, request, *args, **kwargs):
+        """Return single product."""
         try:
             key = kwargs["pk"]
             product = get_object_or_404(Product, pk=key)
@@ -64,7 +57,9 @@ class ProductDetailView(generic.DetailView):
         return render(
             request,
             self.template_name,
-            context={"product": product, "form": form},
+            context={
+                "product": product,
+            },
         )
 
 

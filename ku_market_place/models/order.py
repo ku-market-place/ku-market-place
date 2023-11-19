@@ -4,6 +4,7 @@ from .order_item import OrderItem
 
 
 class Order(models.Model):
+    """Class for order table."""
     class OrderStatus(models.TextChoices):
         SHIPPING = 'Shipping', 'Shipping'
         DELIVERY = 'Delivery', 'Delivery'
