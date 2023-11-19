@@ -9,7 +9,7 @@ urlpatterns = [
     path('', RedirectView.as_view(url="product/"), name='home'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
-    path('order_list/', views.order_list, name='order_list'),
+    path('order_list/', login_required(views.order_list, login_url="google_login"), name='order_list'),
     path('product/', views.ProductView.as_view(), name='product'),
     path(
         'single_product/<int:pk>/',
