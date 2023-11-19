@@ -32,13 +32,21 @@
                         <li><strong>Year of Production:</strong> {{ product.year }}</li>
                     </ul>
                     <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
-                    <form action="" method="post">
-                        <label for="quantity">Quantity:</label>
-                        <input name="quantity" type="quantity" class="quantity-text" id="quantity"
-                               onfocus="if(this.value == '1') { this.value = ''; }"
-                               onBlur="if(this.value == '') { this.value = '1';}"
-                               value="1">
-                        <input type="submit" class="button" value="Own It Now!">
+                    <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
+                        {% csrf_token %}
+{#                        <div class="row">#}
+{#                            <div class="col-md-4">#}
+{#                                <fieldset>#}
+{#                                    <input type="text" name="quantity" id="id_quantity" value="1" onfocus="clearField(this);" onblur="clearField(this);">#}
+{#                                </fieldset>#}
+{#                            </div>#}
+{#                            <div class="col-md-8">#}
+{#                                <fieldset>#}
+{#                                    <button type="submit" id="form-submit" class="button">Add to Cart</button>#}
+{#                                </fieldset>#}
+{#                            </div>#}
+                        {{ form.as_p }}
+                        <input type="submit" class="button" value="Add to Cart">
                     </form>
                     <div class="down-content">
                         <div class="categories">
@@ -50,37 +58,6 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-      <div class="right-content">
-        <h3>Elevate Your Style</h3>
-        <h4>{{ product.productDisplayName }}</h4>
-        <h6>฿{{ product.productPrice }}</h6>
-        <p>Discover a piece that speaks to your individuality:</p>
-        <ul>
-          <li><strong>Gender:</strong> {{ product.gender }}</li>
-          <li><strong>Article Type:</strong> {{ product.articleType }}</li>
-          <li><strong>Color:</strong> {{ product.baseColour }}</li>
-          <li><strong>Season:</strong> {{ product.season }}</li>
-          <li><strong>Usage:</strong> {{ product.usage }}</li>
-          <li><strong>Year of Production:</strong> {{ product.year }}</li>
-        </ul>
-            <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
-            <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <input type="submit" class="button" value="Add to Cart">
-            </form>
-            <div class="down-content">
-              <div class="categories">
-                <h6>Explore More:
-                  <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
 
 <script language="text/Javascript">
 cleared[0] = cleared[1] = cleared[2] = 0;

@@ -59,6 +59,7 @@ class ProductDetailView(generic.DetailView):
             self.template_name,
             context={
                 "product": product,
+                "form": form,
             },
         )
 
@@ -77,7 +78,6 @@ def order_list(request):
 
 class CartDailView(View):
     def get(self, request, *args, **kwargs):
-        print(request.user.id)
         form = CheckOutForm()
         try:
             customer = Customer.objects.get(user=request.user)
@@ -121,10 +121,8 @@ class AddToCartView(View):
         form = CartForm(request.POST)
         product_id = kwargs.get("product_id")
         quantity = request.POST.get("quantity")
-        print(quantity)
 
         if form:
-            print("form is valid")
 
             # Assuming you have a Product model, get the product instance
             product = Product.objects.get(pk=product_id)
@@ -138,17 +136,29 @@ class AddToCartView(View):
             order_item.save()
             try:
                 customer = Customer.objects.get(user=request.user)
-                order = Order.objects.filter(customer_id=customer.id).last()
-                order.order_item_id.add(order_item)
-                order.save()
-            except Order.DoesNotExist:
+            except Customer.DoesNotExist:
+                customer = Customer.objects.create(
+                    user=request.user,
+                )
+                customer.save()
+            order = Order.objects.filter(customer_id=customer.id).last()
+            if order is None:
                 order = Order.objects.create(
                     customer_id=Customer.objects.get(user=request.user.id),
-                    order_item_id=order_item,
                     total_amount=order_item.total_amount,
                 )
+                order.order_item_id.set([order_item])
                 order.save()
-            print("success")
+                return redirect('ku-market-place:view_cart')
+            try:
+                order = order.order_item_id.get(product=order_item.product)
+                order.quantity = int(order.quantity) + int(quantity)
+                order.total_amount = (product.productPrice * int(quantity)) + order.total_amount
+                order.save()
+                return redirect('ku-market-place:view_cart')
+            except OrderItem.DoesNotExist:
+                order.order_item_id.add(order_item)
+                order.save()
 
             # Redirect to a success page or the same page if needed
             return redirect('ku-market-place:view_cart')

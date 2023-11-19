@@ -10,11 +10,12 @@
 
         {% if order_items %}
             {% for order in order_items %}
+                <a href="{% url 'ku-market-place:single_product' order.product.id %}">
                 <div class="row mb-4">
                     <div class="col-md-4">
-                        <img src="{{ order.product.image.url }}" alt="{{ order.product.name }}" class="img-fluid">
+                        <img src="{{ order.product.image }}" style="width: 300px; height:300px;">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" href="{% url 'ku-market-place:single_product' order.product.id %}">
                         <h3>{{ order.product.productDisplayName }}</h3>
                         <p>{{ order.product.description }}</p>
                         <p>Price: {{ order.product.productPrice }}</p>
@@ -22,6 +23,7 @@
                         <p>Total: {{ order.total_amount }}</p>
                     </div>
                 </div>
+                </a>
             {% endfor %}
         {% endif %}
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
