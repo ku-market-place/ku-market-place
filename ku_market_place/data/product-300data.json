@@ -1,0 +1,5402 @@
+[
+{
+  "model": "ku_market_place.product",
+  "pk": 18696,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Jeans",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Peter England Men Party Blue Jeans",
+    "productPrice": 1356.5,
+    "quantity": 165,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4850873d0c417e6480a26059f83aac29_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18697,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Silver",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Titan Women Silver Watch",
+    "productPrice": 5863.25,
+    "quantity": 65,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Titan-Women-Silver-Watch_b4ef04538840c0020e4829ecc042ead1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18698,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Track Pants",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Manchester United Men Solid Black Track Pants",
+    "productPrice": 7636.25,
+    "quantity": 165,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8153dc35d9a5420eeb93922067137db6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18699,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Grey T-shirt",
+    "productPrice": 4887.0,
+    "quantity": 126,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Puma-Men-Grey-T-shirt_32668f8a61454d0cc028a808cf21b383_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18700,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Inkfruit Mens Chain Reaction T-shirt",
+    "productPrice": 4489.0,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9c1b19682ecf926c296f520d5d6e0972_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18701,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Green",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Fabindia Men Striped Green Shirt",
+    "productPrice": 6280.75,
+    "quantity": 176,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/06e9d4231254fdb2c7fe967ad413ad7b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18702,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Jealous 21 Women Purple Shirt",
+    "productPrice": 1697.75,
+    "quantity": 150,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/45ddbc6a15140556214e15923244755b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18703,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Socks",
+    "articleType": "Socks",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Pack of 3 Socks",
+    "productPrice": 8779.25,
+    "quantity": 80,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4ca8848ab441378a392d9d5bf0b0f3c7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18704,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Skagen Men Black Watch",
+    "productPrice": 6199.5,
+    "quantity": 190,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Skagen-Men-Black-Watch_4982b2b1a76a85a85c9adc8b4b2d523a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18705,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Future Cat Remix SF Black Casual Shoes",
+    "productPrice": 7081.5,
+    "quantity": 108,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/051d64772f1b38ff476fbf0a807f365a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18706,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Fossil Women Black Huarache Weave Belt",
+    "productPrice": 6985.25,
+    "quantity": 139,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8eee4563e14cf451b07f27761fd6535f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18707,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Fila Men Cush Flex Black Slippers",
+    "productPrice": 1634.0,
+    "quantity": 126,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/53690e3f396f411e184b249672d6ebae_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18708,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Murcia Women Blue Handbag",
+    "productPrice": 9979.0,
+    "quantity": 94,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Murcia-Women-Blue-Handbag_13cfaff26872c298112a8e7da15c1e1d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18709,
+  "fields": {
+    "gender": "Boys",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Ben 10 Boys Navy Blue Slippers",
+    "productPrice": 2784.75,
+    "quantity": 54,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5cab6a2305d0e63142f721228aa6d293_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18710,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Purple",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "Reid & Taylor Men Check Purple Shirts",
+    "productPrice": 3077.25,
+    "quantity": 108,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8bc9be576081baae77e8561b1132288f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18711,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Police Men Black Dial Watch PL12889JVSB",
+    "productPrice": 1618.5,
+    "quantity": 120,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Police-Men-Black-Dial-Watch_5bd8cae4fc61052a6f00cfcd69c4a936_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18712,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Girls Knit White Top",
+    "productPrice": 8305.75,
+    "quantity": 183,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f3964f76c78edd85f4512d98b26d52e9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18713,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Bra",
+    "baseColour": "Beige",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Bwitch Beige Full-Coverage Bra BW335",
+    "productPrice": 1827.0,
+    "quantity": 92,
+    "image": "http://assets.myntassets.com/v1/image/style/properties/51832/Bwitch-Beige-Full-Coverage-Bra-BW335_1_d516fa94f14f0a5ecc90df7754390eb5.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18714,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Baggit Women Brown Handbag",
+    "productPrice": 6503.25,
+    "quantity": 163,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b14c7bf275c6edca3e849200fb7cbf6c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18715,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "CASIO G-Shock Men Black Digital Watch G-7710-1DR G223",
+    "productPrice": 3616.0,
+    "quantity": 177,
+    "image": "http://assets.myntassets.com/assets/images/17429/2018/3/5/11520250143953-CASIO-G-Shock-Men-Black-Digital-Watch-G223-8211520250143786-1.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18716,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Men Spry M Black Sandals",
+    "productPrice": 4611.75,
+    "quantity": 191,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c5a22e9ccf9b10e0a89ffbbf3e386584_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18717,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Shoe Accessories",
+    "articleType": "Shoe Accessories",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Timberland Unisex Rubber Sole Brush Shoe Accessories",
+    "productPrice": 7377.5,
+    "quantity": 73,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/92589dc7416b70f1a5c6a4c1f13d14e3_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18718,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Sweatshirts",
+    "baseColour": "Grey",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men Lfc Auth Hood Grey Sweatshirts",
+    "productPrice": 8070.0,
+    "quantity": 89,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/59912a0287751ff0475c8748dbcf4ea0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18719,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Deodorant",
+    "baseColour": "White",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "David Beckham Signature Men Deos",
+    "productPrice": 469.0,
+    "quantity": 199,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3295fc148576955745c0b259d7968727_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18720,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "Buckaroo Men Flores Black Formal Shoes",
+    "productPrice": 1274.25,
+    "quantity": 155,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/06edc2da9c6d103d299e5e8dafc5b6b9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18721,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Bracelet",
+    "baseColour": "Bronze",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Pitaraa Women Bronze Beaded Bracelet",
+    "productPrice": 5866.75,
+    "quantity": 105,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Pitaraa-Women-Golden-Brass-Bead-Bracelet_179aa06939858b54e8e6c80fe12d94d5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18722,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Fila Men's Round Neck Navy Blue T-shirt",
+    "productPrice": 944.5,
+    "quantity": 134,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/296a8c388d05d67346db88af27d3b763_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18723,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Lips",
+    "articleType": "Lipstick",
+    "baseColour": "Brown",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Colorbar Soft Touch Show Stopper Copper Lipstick 037",
+    "productPrice": 3027.0,
+    "quantity": 140,
+    "image": "http://assets.myntassets.com/assets/images/56019/2019/1/11/49d718c4-6d86-42d1-8d00-1ce4b7851b2c1547190759839-Colorbar-Soft-Touch-Show-Stopper-Copper-Lipstick-037-2715471-1.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18724,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Murcia Women Casual Brown Handbag",
+    "productPrice": 813.25,
+    "quantity": 190,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/88d0bc675d72477729f38c30332e749a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18725,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "John Players Men Navy Blue Shirt",
+    "productPrice": 9894.25,
+    "quantity": 50,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3af9f145845d8453a066322de35980af_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18726,
+  "fields": {
+    "gender": "Boys",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Green",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Disney Kids Boy's Crew Sea Life Sialing Green Teen Kidswear",
+    "productPrice": 8775.25,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0108969213975af06095ff84a0ec0c72_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18727,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "John Players Men Brown Shirt",
+    "productPrice": 2152.25,
+    "quantity": 152,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/John-Players-Men-Brown-Shirt_7eec3b0568f65dc8f39a534376538551_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18728,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2014,
+    "usage": "Casual",
+    "productDisplayName": "Gas Men Europa White Shoes",
+    "productPrice": 3628.5,
+    "quantity": 117,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9c3d77147758ab10f12caf6184fe13ef_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18729,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Carlton London Women Black & Gold Toned Flats",
+    "productPrice": 3035.75,
+    "quantity": 93,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Carlton-London-Women-Black-Gladiator-Sandals_b8f695202ccc1889f65d57b4000a888f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18730,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Green",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Ethnic",
+    "productDisplayName": "Diva Women Embroided Green Kurta",
+    "productPrice": 8060.5,
+    "quantity": 180,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/08a0c29d2ea67ca9449aa54466f6b0a1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18731,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Rocky S Women White Handbag",
+    "productPrice": 7020.5,
+    "quantity": 163,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Rocky-S-Women-White-Handbag_1440a0abd2ddaf3199965e604831b164_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18732,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Teal",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Kiara Women Teal Handbag",
+    "productPrice": 1966.5,
+    "quantity": 107,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8b58c65e5634233b165c40cdbbcf58b8_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18733,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Copper",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Fossil Women Copper Chronograph Watch CH2589",
+    "productPrice": 6513.75,
+    "quantity": 184,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/072af0cd079f20296c72f3594a21f141_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18734,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Jealous 21 Women's Pink T-shirt",
+    "productPrice": 5763.75,
+    "quantity": 75,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b56e261f9206aa95e42c43f4e62d0e5a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18735,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "Peter England Men Formal Black Belt",
+    "productPrice": 835.25,
+    "quantity": 158,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Peter-England-Men-Formal-Black-Beltbc472bd919c505690ecbc1eed8af7fbf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18736,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Catwalk Women Leather Brown Flats",
+    "productPrice": 5158.25,
+    "quantity": 168,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/94a9deea53125663d9bbe61cb38b84b4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18737,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Off White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Ssteele Men Off White Watch",
+    "productPrice": 1430.5,
+    "quantity": 68,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/93aa34922c6446706c003ba2255747f5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18738,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Beige",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "W Women Printed Beige Kurta",
+    "productPrice": 8358.0,
+    "quantity": 106,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/df0a23e732654c5e7db3888e39393e79_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18739,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Waistcoat",
+    "baseColour": "Grey",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Scullers Men  Grey Waistcoat",
+    "productPrice": 4327.75,
+    "quantity": 177,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0d2e2ceaaf6d09d447caad678b2edbe6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18740,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2010,
+    "usage": "Sports",
+    "productDisplayName": "Nike Men's Incinerate MSL White Blue Shoe",
+    "productPrice": 7179.0,
+    "quantity": 142,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4eff2353c62ec8b7bca9fbbaf5996bd2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18741,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Shorts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Puma Men Long Logo Black Bermuda",
+    "productPrice": 3439.75,
+    "quantity": 70,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/91ca48e3204f23cd376fad7f186875bf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18742,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Maroon",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Levis Men Boxer Maroon Brief",
+    "productPrice": 8029.5,
+    "quantity": 67,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/155353efc674d253e30c213ca07bbb0b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18743,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "John Miller Men Stripes White Red Shirts",
+    "productPrice": 2384.5,
+    "quantity": 77,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5e557eb0be7c6420f7c7a6bbaa432993_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18744,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Baggit Women Hood Dabang Black Belt",
+    "productPrice": 8572.0,
+    "quantity": 156,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2eb3aa5eefb3319f10f7815100a18e3c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18745,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Women White Dial Watch",
+    "productPrice": 4166.25,
+    "quantity": 189,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/676dd802241d46a5ce28c78d1dabbc5a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18746,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "Clarks Men Hang Work Leather Black Formal Shoes",
+    "productPrice": 4894.75,
+    "quantity": 107,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2976e4095e7b3ae2de99df54d2adeaaa_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18747,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Vishudh Women Brown Kurta",
+    "productPrice": 5362.5,
+    "quantity": 195,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/fee54b57fcd02b7c07d42b0918025099_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18748,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Playboy Men Blue Titanium Briefs",
+    "productPrice": 7851.5,
+    "quantity": 172,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Playboy-Men-Blue-Titanium-Briefs_5c63c52edabbab43f6aefc52842d73f2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18749,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "Arrow Men Black Formal Shoes",
+    "productPrice": 1251.25,
+    "quantity": 74,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Arrow-Men-Black-Formal-Shoes_70a3c7c185338a5636c8c0e668829bb6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18750,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men's Stripe Polo Black T-shirt",
+    "productPrice": 5246.5,
+    "quantity": 50,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/02e4e32cd9d09052f0ec3d46fa747d39_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18751,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Nike Women Purple Polo T-shirt",
+    "productPrice": 417.5,
+    "quantity": 122,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/206a0614c4644cd8816576efd47d60d8_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18752,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Boy's Kaleb White Brown Kidswear",
+    "productPrice": 5261.5,
+    "quantity": 57,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1aae016d0abb224cfc18e6bd9bb01ad1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18753,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Silver",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Carrera Men Dial steel finish strap Silver Watches",
+    "productPrice": 5452.25,
+    "quantity": 115,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b2959d44db543af13d78492225a830de_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18754,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Wrangler Men Motor Rider Red T-Shirts",
+    "productPrice": 2377.75,
+    "quantity": 174,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b34550bc6415dcd66892de4ef2837fd9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18755,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Saree",
+    "articleType": "Sarees",
+    "baseColour": "Grey",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "FNF Pink & Grey Wedding Collection Sari",
+    "productPrice": 8043.5,
+    "quantity": 136,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/FNF-Green-Collection-for-Wedding-Wear-Sari_6c60eef0b8d9cff87cfcd1f73953e5cd_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18756,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Scribble Black Tshirts",
+    "productPrice": 9528.5,
+    "quantity": 192,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cd16e955e4b6b3f9d7089c15652a3f00_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18757,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "CASIO EDIFICE Men Black Dial Chronograph Watch ED60",
+    "productPrice": 4060.0,
+    "quantity": 184,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b8024bdd3fc47c2b20bd840f89811979_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18758,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Beige",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "French Connection Women Beige Handbag",
+    "productPrice": 4761.5,
+    "quantity": 183,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/97d3bb4a71c9f7da88305ce9144d8576_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18759,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Timberland Men Black Casual Shoes",
+    "productPrice": 7025.75,
+    "quantity": 50,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/70e74ca34b3b534b19d6b006d5bfad0a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18760,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Vans Men Classic Slip-On Purple & Black Shoes",
+    "productPrice": 1976.75,
+    "quantity": 159,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/49f884ddf4420d869ad143857d3bc33d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18761,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Perfume and Body Mist",
+    "baseColour": "Pink",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Police Women Passion Perfume",
+    "productPrice": 544.25,
+    "quantity": 54,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/438c41900a80acabb3ef197f0559a9eb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18762,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men's Lowell White Silver Shoe",
+    "productPrice": 7989.0,
+    "quantity": 60,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0707b75d2d44e9cec9d27c944294ddbe_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18763,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Shorts",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Do U Speak Green Men Blue Shorts",
+    "productPrice": 5176.75,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Do-u-speak-green-Men-Blue-Shorts_40b6775eae62124195817a64d4ae4a93_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18764,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "ID Men Red Shoes",
+    "productPrice": 9126.0,
+    "quantity": 116,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6a6ebc47eaf2fe034bcfd94060a285ba_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18765,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Peperone Women Black & White Handbag",
+    "productPrice": 5999.0,
+    "quantity": 70,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/73bc7d63943231e4df1c7b7600496a3d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18766,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Khaki",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Vans Men Khaki Shoes",
+    "productPrice": 5223.25,
+    "quantity": 59,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Khaki-Shoes_dcaf7c703e9c0396650529df2b2a8893_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18767,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Pink",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Indigo Nation Men Reversible Bling Pink Shirts",
+    "productPrice": 8061.75,
+    "quantity": 64,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0be615f02ae1f1cfe78155555a79007c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18768,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2010,
+    "usage": "Sports",
+    "productDisplayName": "Nike Women Black T-shirt",
+    "productPrice": 9660.5,
+    "quantity": 63,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/135f9aa8141d682fc218393049c70324_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18769,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Sweatshirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Men Blue Sweatshirt",
+    "productPrice": 9389.5,
+    "quantity": 128,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/fcd52c6506b43f3af116a62c2ea81204_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18770,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Manchester United Men Solid Red Tshirt",
+    "productPrice": 2436.25,
+    "quantity": 103,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/eba1c1b241555d8afa3f7232ed2c6933_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18771,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Heels",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Rocia Women Black Flats",
+    "productPrice": 6677.0,
+    "quantity": 175,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8d6fd53f28e010658cdf5c14c43d0cb0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18772,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Heels",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Catwalk Women Leather Flats",
+    "productPrice": 2520.5,
+    "quantity": 124,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4d90e05b9e99e203b3ce191439619bcb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18773,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Green",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Mineral Women Green Top",
+    "productPrice": 1093.25,
+    "quantity": 160,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/fe446adf94f9beb301b61bfc75a70bfa_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18774,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Pink",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Crocs Dora Boots Pink Sandals",
+    "productPrice": 5530.0,
+    "quantity": 80,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0be6693dafb4261645b22c6e9e7e67f4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18775,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Eyewear",
+    "articleType": "Sunglasses",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Image Men Sunglasses",
+    "productPrice": 7863.25,
+    "quantity": 122,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Image-Men-Classic-Eyewear-Black-Sunglasses_a37f3b87d0d05062ed063adc7aac78bf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18776,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Silver",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Lotto Men XL Water Man Silver Slippers",
+    "productPrice": 809.0,
+    "quantity": 52,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/69482728a521cbd2ba571e36016d5f63_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18777,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Men Solid Pink Polo T-shirts",
+    "productPrice": 7329.75,
+    "quantity": 186,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8d7f0bbb0bdefcbcc692bcdf4a6400ee_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18778,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Innerwear Vests",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Levis Men Comfort Style Grey Innerwear Vest",
+    "productPrice": 1705.5,
+    "quantity": 164,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c5c095c0e09eb200aa8d57457c53ec07_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18779,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2013,
+    "usage": "Casual",
+    "productDisplayName": "Reebok Men Black Possession Flip Flops",
+    "productPrice": 248.0,
+    "quantity": 146,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/647838a2e988ab55b76c9aa9ddd15ad7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18780,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Pendant",
+    "baseColour": "Silver",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lucera Women Silver Pendant",
+    "productPrice": 4673.75,
+    "quantity": 146,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/aff52e6e6bc208923a493612e8f6a3e7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18781,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Men White Dial Analog Chronograph Watch",
+    "productPrice": 6694.25,
+    "quantity": 66,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/80c170d3a8e46c81f22ecebd1f772d32_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18782,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Nails",
+    "articleType": "Nail Polish",
+    "baseColour": "Bronze",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "NA",
+    "productDisplayName": "Streetwear Ash Nail Polish # 31",
+    "productPrice": 635.5,
+    "quantity": 83,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Streetwear-Ash-Nail-Polish--31_21d33100dbf0e4b8bb0b33a980de469b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18783,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Laptop Bag",
+    "baseColour": "Orange",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Peter England Unisex Orange Sleeve Bag",
+    "productPrice": 1837.75,
+    "quantity": 149,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1847a81fa1d237bfbae1e797dff55909_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18784,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "Puma Men Axis White & Grey Sports Shoes",
+    "productPrice": 5986.75,
+    "quantity": 67,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/52ad8ae288ba080d88a116b3c70305ec_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18785,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Off White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Tonga Women Maroon Top",
+    "productPrice": 7185.75,
+    "quantity": 174,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Tonga-Women-Maroon-Top_e5cc855ba59e5640817434d45f9c088d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18786,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Scarves",
+    "articleType": "Scarves",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Femella Women Brown Scarf",
+    "productPrice": 5949.5,
+    "quantity": 118,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/aeb9132a29d8844aca73a4544d8135c5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18787,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Rain Jacket",
+    "baseColour": "Coffee Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "NA",
+    "productDisplayName": "Just Natural Unisex Charcoal Rain Jacket",
+    "productPrice": 3723.0,
+    "quantity": 90,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cbc319393da4e3d0eb140d3c8a045d2c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18788,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Men's Twelve Faster T-shirt",
+    "productPrice": 2293.0,
+    "quantity": 171,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2d986dbf9e5f64e3ab8471120c557db4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18789,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Dress",
+    "articleType": "Dresses",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Arrow Woman Women Blue Dress",
+    "productPrice": 3160.75,
+    "quantity": 170,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c5b0d7c1f0308be020655bc10ca16427_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18790,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Red",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Levis Men Red Brief",
+    "productPrice": 5942.5,
+    "quantity": 127,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/07f0136ab41d3167b3d1e8b84cfc5107_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18791,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Ganuchi Men Casual Black Sandals",
+    "productPrice": 6729.5,
+    "quantity": 93,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b23f1e70aec0102c360fb9dfdc476023_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18792,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Loungewear and Nightwear",
+    "articleType": "Night suits",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "SDL by Sweet Dreams Women Green Printed Night Suit S11-3124",
+    "productPrice": 755.25,
+    "quantity": 90,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/SDL-by-Sweet-Dreams-Women-White-Pyjama-Set_debea45adf6bdb5816030e5d05b53d2f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18793,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Indigo Nation Men Printed Black T-shirt",
+    "productPrice": 5266.5,
+    "quantity": 107,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7a1bc7d255671c7f4b85f1b1b35e945b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18794,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Perfume and Body Mist",
+    "baseColour": "Red",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "DKNY Women Red Delicious Perfume",
+    "productPrice": 8362.5,
+    "quantity": 172,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2965814bbf6d6a14e720c712941b323c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18795,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Skirts",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "Urban Yoga Women Blue Skirt With Leggings",
+    "productPrice": 2669.25,
+    "quantity": 162,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c3a37f190933411b11c0fa488bc8bc4d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18796,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Girls Black Top",
+    "productPrice": 5503.25,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/dce310e4c15223a6c964631190263284_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18797,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Nike Men Air Rift MTR White Casual Shoe",
+    "productPrice": 6258.25,
+    "quantity": 53,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ac5a2fb9462db16f4cf5fc0f3616a9e6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18798,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men White Corona Sports Shoes",
+    "productPrice": 9561.25,
+    "quantity": 187,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5059a8f382c53105f1bdce6780543934_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18799,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Fastrack Unisex Black Dial Watch 9915PP13",
+    "productPrice": 1793.25,
+    "quantity": 157,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1de1449cc15d68bc4e53fac49a1e0e18_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18800,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Vans Men Blue Era Scilla Plaid Shoes",
+    "productPrice": 4044.75,
+    "quantity": 50,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Blue-Casual-Shoes_f9ad04b071e06c34a04e2c0a047d58a1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18801,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Crocs Kids Navy Blue Clogs",
+    "productPrice": 6439.5,
+    "quantity": 109,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Crocs-Kids-Navy-Blue-Clogs_dd0334757683ef726ca116cc7b8b6012_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18802,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Classic Polo Men Vulcan White Polo Tshirts",
+    "productPrice": 6935.5,
+    "quantity": 66,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9b9622c9c440e59a67c876cf07706f3c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18803,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Grey",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Fila Men Destiny Grey Sports Shoes",
+    "productPrice": 4156.0,
+    "quantity": 151,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/498da65eeee9a23f2049449258384d55_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18804,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men Blue Chill Sports Shoes",
+    "productPrice": 3555.5,
+    "quantity": 77,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c0abfa74fe61af6ba9e5f4936f45e6c7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18805,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Yellow",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Turtle Check Men Yellow Shirt",
+    "productPrice": 6001.0,
+    "quantity": 165,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1049df82b306da238c324c6c7031b135_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18806,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Wallets",
+    "articleType": "Wallets",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Arrow Men Black Wallet",
+    "productPrice": 4950.0,
+    "quantity": 53,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7cc4a01bf1667b6954fb9d44bfdda095_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18807,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Heels",
+    "baseColour": "Grey",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Catwalk Women Gun Metal Grey Heels",
+    "productPrice": 476.0,
+    "quantity": 90,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cea14ca6ae7273963babfa80798aa61c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18808,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Wallets",
+    "articleType": "Wallets",
+    "baseColour": "Beige",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Women Solid Beige Wallets",
+    "productPrice": 6072.5,
+    "quantity": 176,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/22ab917e5ff62a05d1d932daf35cf158_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18809,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lotto Men Ridge Brown Sandals",
+    "productPrice": 2655.75,
+    "quantity": 81,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/42344fe581af7a4c62d2a39ceb57be24_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18810,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "U.S. Polo Assn. Men White & Navy Blue Shirt",
+    "productPrice": 2817.0,
+    "quantity": 196,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/US-Polo-Assn-Men-White---Navy-Blue-Shirt_233bed1565b9ac72f62fb685a2223f3c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18811,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Jockey ELANCE Men Bikini White Brief 1005",
+    "productPrice": 8365.5,
+    "quantity": 164,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e5b0ca8a3d69ff5f0d6e2d9303705eb9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18812,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Blazers",
+    "baseColour": "Charcoal",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "Scullers For Her Charcoal Blazer",
+    "productPrice": 2490.5,
+    "quantity": 87,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/a2826334fe816ee0e95ce93b8aabc90d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18813,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Jeans",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Jealous 21 Women Black Jeans",
+    "productPrice": 5426.25,
+    "quantity": 80,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Jealous-21-Women-Black-Jeans_6c38590b2ec56b444a760aa56a8ef7e9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18814,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Red",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "iPanema Women Red Flip Flops",
+    "productPrice": 1698.75,
+    "quantity": 55,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3101e6784596ba83c3fb728bcf5b6187_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18815,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Fabindia Women Blue Silk Sling Bag",
+    "productPrice": 3607.75,
+    "quantity": 185,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/21c45000f209a31a74ed47f9ec9ac87e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18816,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Silver",
+    "season": "Spring",
+    "year": 2010,
+    "usage": "Casual",
+    "productDisplayName": "Carlton London Women Silver Wedge Sandal",
+    "productPrice": 1618.5,
+    "quantity": 81,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1133e704c0d02e19ac7b09685788aa40_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18817,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Green",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Sushilas Women Printed Green Kurta",
+    "productPrice": 723.0,
+    "quantity": 84,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Sushilas-Women-Printed-Green-Kurta_c9347616597dbcbe6eca805e1677c269_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18818,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Ring",
+    "baseColour": "Silver",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lucera Women Silver Ring",
+    "productPrice": 7458.75,
+    "quantity": 118,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Lucera-Women-Silver-Ring_dccb8dafadde1c4759acfb940fcb42e9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18819,
+  "fields": {
+    "gender": "Boys",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Doodle Boy's Route 66 Biker Blue Teen Kidswear",
+    "productPrice": 5836.25,
+    "quantity": 70,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/117451d5bf32c9ec341a6dfd0c28121a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18820,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Unisex Three Small Dials White Watches",
+    "productPrice": 7693.25,
+    "quantity": 200,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f9f0f53a996cd6df9e48e4e685e25047_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18821,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Eyewear",
+    "articleType": "Sunglasses",
+    "baseColour": "Copper",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Ray-Ban Men Active Lifestyle Copper Sunglasses",
+    "productPrice": 5247.5,
+    "quantity": 131,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Ray-Ban-Men-Active-Lifestyle-Copper-Sunglassesb7761297ec669a622453f898fce8759f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18822,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Kids Adispeed Black Sports Shoes",
+    "productPrice": 5924.5,
+    "quantity": 64,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6bb0dda205ff23b2b1fda526a3c74374_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18823,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Green",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Scullers Men  Green Check Shirt",
+    "productPrice": 6854.0,
+    "quantity": 145,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9b2dc2cfc35d37aee2f4d46532384605_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18824,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Fashion Cat White Slipper",
+    "productPrice": 9370.75,
+    "quantity": 83,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c78acc78b83e4f2e014215d2a302f04b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18825,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Fastrack Men Economy 2 Analg Black Watch",
+    "productPrice": 5280.0,
+    "quantity": 115,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/112edfec7e1965c0f64ad9eb51cac579_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18826,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Sweatshirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Men Solid Blue Sweatshirt",
+    "productPrice": 3470.25,
+    "quantity": 127,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2641289161a53042c64ced38cadb099b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18827,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Puma Men's Large Logo Graphic Black T-shirt",
+    "productPrice": 1960.5,
+    "quantity": 120,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/59433decf845a0c856d3879435d95560_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18828,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Perfume and Body Mist",
+    "baseColour": "Gold",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Giorgio Armani Women Idole Perfume",
+    "productPrice": 6009.75,
+    "quantity": 85,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b0d3dcd6aaa7274486236fa267ef8cb5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18829,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Apparel Set",
+    "articleType": "Kurta Sets",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Aneri Women Black & Maroon Salwar Suit",
+    "productPrice": 9198.75,
+    "quantity": 78,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4d16721ce6d31a02786fa271a40dbc86_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18830,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Clutches",
+    "baseColour": "Red",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Spice Art Women Ribbon Embroidery Red Clutch",
+    "productPrice": 4461.0,
+    "quantity": 60,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ee617574380de80bee9cce9ec585e8be_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18831,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Beige",
+    "season": "Fall",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Estd. 1977 Men Beige & Green Sandals",
+    "productPrice": 5026.0,
+    "quantity": 114,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7adfef9d7001cdcb9a58822c0c8b615f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18832,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Rocky S Women Brown Handbag",
+    "productPrice": 9526.25,
+    "quantity": 193,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Rocky-S-Women-Brown-Handbag_5b44f798c0d6b84b00ae5a6316d931af_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18833,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Coolers Men Black Sandals",
+    "productPrice": 298.75,
+    "quantity": 192,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5fdccf41dafc022f36adea9a7df6751c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18834,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Levis Men Check Red Shirts",
+    "productPrice": 5267.75,
+    "quantity": 147,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9584fab8cde60a77e797973020e5c91d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18835,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shrug",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Tonga Women Pink Printed Shrug",
+    "productPrice": 9709.5,
+    "quantity": 62,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/28d91b2c102e5742714c7f706a73eeb4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18836,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Chromozome Men Grey Briefs",
+    "productPrice": 1725.5,
+    "quantity": 152,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9bd108a473fd6a01005be56f7f0a3807_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18837,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "U.S. Polo Assn. Men Stripes Black  Polo Tshirt",
+    "productPrice": 4800.5,
+    "quantity": 184,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7648ed40d904bf77502b84894f9cb980_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18838,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Copper",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Portia Women Copper-Toned & Brown Sandals",
+    "productPrice": 8176.25,
+    "quantity": 78,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/daadf44edb9420bbd0d335702cf6e095_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18839,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Spykar Men Black and white Check Shirt",
+    "productPrice": 4791.0,
+    "quantity": 83,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5c0c7cee1d5905a18f6a8d4821ae21aa_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18840,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Backpacks",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Nike Unisex Swoosh Black Backpack",
+    "productPrice": 6754.25,
+    "quantity": 129,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6c411e5ff01a791860ac0807b719cf28_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18841,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Myntra Men's Brain Black T-shirt",
+    "productPrice": 5902.5,
+    "quantity": 142,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/477a546e340e50d1c7d4fb252a146692_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18842,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "Nike Men Air Relentless 2 MSL White Sports Shoes",
+    "productPrice": 4111.75,
+    "quantity": 146,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/16a858c7c58d665ba030df2f9f326086_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18843,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Men Black Anzo Breeze Casual Shoes",
+    "productPrice": 6203.75,
+    "quantity": 144,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/aca469db7fbac91473fc2a810461889d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18844,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Fastrack Women White Dial Watch",
+    "productPrice": 7796.5,
+    "quantity": 180,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1c5acff37ece119c5adfe594c2b4bdcd_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18845,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Bracelet",
+    "baseColour": "Steel",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Revv Men Steel Bracelet",
+    "productPrice": 6372.5,
+    "quantity": 55,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/551485ddc5fa42d1734898e3b32e72c0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18846,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Bra",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2014,
+    "usage": "Casual",
+    "productDisplayName": "Lovable Women All Day Long Black Bra",
+    "productPrice": 8970.25,
+    "quantity": 193,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cef99b09020adbc2a0d7e5f9889ce9c4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18847,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Headwear",
+    "articleType": "Caps",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Manchester United Men Solid White Cap",
+    "productPrice": 8871.0,
+    "quantity": 67,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4d0de24d6538a8507059625949e34878_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18848,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Heels",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Rocia Women Black Heels",
+    "productPrice": 5158.25,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/50c7dd932d347768b05766e5dd231355_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18849,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Yellow",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men ducati logo tee Yellow Tshirts",
+    "productPrice": 3475.5,
+    "quantity": 179,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ef754e63472dece06abfa6d6c1266d91_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18850,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Numero Uno Men White Casual Shoes",
+    "productPrice": 3441.5,
+    "quantity": 149,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ff82e800185f09437bdd38606dbd4ec6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18851,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Silver",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Q&Q Men Silver-Toned Dial Analogue Watch Q252J404Y",
+    "productPrice": 9161.75,
+    "quantity": 166,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Q-Q-Men-Silver-Dial-Watch_9bc915bdcff17ce2aa1168cf3a27654e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18852,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Innerwear Vests",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Levis Men White Innerwear Vest",
+    "productPrice": 7389.25,
+    "quantity": 66,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Levis-Men-White-Innerwear-Vest_ead823677896c7f737a55a7750d809c7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18853,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Men Black Dial Watch",
+    "productPrice": 233.75,
+    "quantity": 132,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Maxima-Men-Black-Dial-Watch_c427a05e5f1d545b2b03ad86b4960427_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18854,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Wrangler Men's Minstrel Shoulder Loop Purple T-shirt",
+    "productPrice": 5337.25,
+    "quantity": 72,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f9622342fedb746c6515647f128b94a6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18855,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Wrangler Men Furious Rides Navy Blue T-Shirts",
+    "productPrice": 2315.75,
+    "quantity": 127,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cc57b520818a0ada689545d2bdd025d9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18856,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Saree",
+    "articleType": "Sarees",
+    "baseColour": "Green",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "FNF Green Wedding Collection Sari",
+    "productPrice": 7701.5,
+    "quantity": 113,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/FNF-Green-Collection-for-Wedding-Sari_7e6a7f6bba933b0923861ac3b65c9f5e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18857,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Rockport Men LLandro Red Casual Shoes",
+    "productPrice": 2405.0,
+    "quantity": 182,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0ea0e6130d5d4c093e0e516f9b43ced6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18858,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Green",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Skechers Women Green Shoe",
+    "productPrice": 5401.25,
+    "quantity": 93,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7de650b81e8fd8be54794b6f466f3b8e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18859,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Silver",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Men Ssteele Silver Dial Watch",
+    "productPrice": 790.5,
+    "quantity": 170,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1223bc5aa8de555c058dbafa61b4c6cf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18860,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Gold",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Titan Men Gold Dial Watch",
+    "productPrice": 6645.75,
+    "quantity": 62,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/946643c653dae988057d427e72b4d5f6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18861,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Trousers",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "John Miller Men Solid Type Black Trousers",
+    "productPrice": 3893.5,
+    "quantity": 127,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/bbddb8510d402639e0a038bde5ec08bb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18862,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Locomotive Men Navy Blue Printed T-shirt",
+    "productPrice": 2115.0,
+    "quantity": 136,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b24d6360e5f726e86b7db28e2225894b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18863,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Maxima Men Brown Dial Watch",
+    "productPrice": 3616.0,
+    "quantity": 105,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f0a2359518806948aa76a37b1c9fe2a9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18864,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Sweatshirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors Of Benetton Women Light Winter Black Sweatshirts",
+    "productPrice": 9019.5,
+    "quantity": 198,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c843af98fead5393ecf56934e07ca496_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18865,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Catwalk Women Brown Sandals",
+    "productPrice": 4340.25,
+    "quantity": 189,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Brown-Sandals_c094f60d90c695681a6b79cf241777fc_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18866,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Perfume and Body Mist",
+    "baseColour": "White",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Nike Fragrances Women 5th Element Perfume 150 ml",
+    "productPrice": 5692.75,
+    "quantity": 103,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3db0d3544350b8d72f968ede0af3b0d3_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18867,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Kiara Women Graphiti White Handbag",
+    "productPrice": 6522.25,
+    "quantity": 56,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/97f41f38d2fa5f88fa5322daf7f093f6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18868,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Eyewear",
+    "articleType": "Sunglasses",
+    "baseColour": "Grey",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Louis Philippe Men Grey Sunglasses",
+    "productPrice": 4712.25,
+    "quantity": 198,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Louis-Philippe-Men-Grey-Sunglasses_1446c537f905743abebac42f5a02f776_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18869,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Mark Taylor Men Striped Blue Shirt",
+    "productPrice": 2430.75,
+    "quantity": 52,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e01152d30659f4099b46cb0c1fcb918b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18870,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Earrings",
+    "baseColour": "Silver",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Ethnic",
+    "productDisplayName": "Fabindia Women Anusuya Silver Earrings",
+    "productPrice": 8746.75,
+    "quantity": 152,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f21ff0021d5d5095ed087314e548ea24_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18871,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Lotto Unisex Canvas Black Check Shoe",
+    "productPrice": 6856.75,
+    "quantity": 162,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ef0e264ebd347265da9fcf1bdff4b2f5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18872,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Tan",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Peter England Men Casual Tan Belt",
+    "productPrice": 1388.75,
+    "quantity": 159,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f8a2854d9f97f9fde7b768dd3648198d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18873,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "Arrow Men Formal Black Shoe",
+    "productPrice": 1707.5,
+    "quantity": 81,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/0201105e4604bc784525d9cf0e972c40_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18874,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Grey",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Lino Perros Women Weaved  Grey Belt",
+    "productPrice": 8772.5,
+    "quantity": 188,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3f475c2e490c2e2c653f10aa5a4a4506_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18875,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lee Women Paula Blue Top",
+    "productPrice": 1494.25,
+    "quantity": 179,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5b427e7381af213df2d54a17cd193aea_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18876,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Vans Unisex Black & Grey Classic Shoes",
+    "productPrice": 1797.5,
+    "quantity": 51,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ea497c53bbc69cb510e3f7b2fe4a7abb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18877,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Men Short Black Shirts",
+    "productPrice": 1087.25,
+    "quantity": 137,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/47e0bf9f4a04bd6f5901c0f4fc65e54d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18878,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Deodorant",
+    "baseColour": "Black",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Reebok Men Pack of 2 Pirates of the Caribbean Deos",
+    "productPrice": 1632.75,
+    "quantity": 122,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4f56561974db43db763f18a06caedbd0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18879,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Nike Men Printed Black T-shirt",
+    "productPrice": 3617.5,
+    "quantity": 176,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/75c8932f3b5a274c73e3c94f95540d7b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18880,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Lips",
+    "articleType": "Lipstick",
+    "baseColour": "Brown",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Colorbar Soft Touch Mousse Lipstick 025",
+    "productPrice": 3821.0,
+    "quantity": 142,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ColorBar-Soft-Touch-Mousse-Lipstick-025_9acb45fa8b3bc6021e8ef261642e9de1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18881,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Murcia Women Casual Brown Handbag",
+    "productPrice": 9003.75,
+    "quantity": 63,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/bf2a4f36c9cc6b2fb51c5e7bad341681_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18882,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Trousers",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "ONLY Women directoire blue Trousers",
+    "productPrice": 2212.0,
+    "quantity": 171,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ONLY-Women-directoire-blue-Trousers_9ad40a06ae4b8c071f84e12599c1c9b7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18883,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Deodorant",
+    "baseColour": "Pink",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Colour me Women Flowers Deo",
+    "productPrice": 5484.75,
+    "quantity": 132,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Colour-me-Women-Flowers-Deo_bbdd019aace399d86a7f5c4ba11f6881_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18884,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Girls Pretty Blossom Blue Top",
+    "productPrice": 1881.0,
+    "quantity": 88,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/fc3c1b46906d5c148c45f532d0b3ffb5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18885,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Brown",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Formal",
+    "productDisplayName": "Carlton London Men Formal Brown Formal Shoes",
+    "productPrice": 3313.25,
+    "quantity": 184,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b195b911f558c0232e22849d1ca73193_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18886,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Red",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Vishudh Women Red Printed Kurta",
+    "productPrice": 3185.75,
+    "quantity": 151,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cc658745ce38f9e09bec039a997155a9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18887,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Unisex Response ST Analogue Black Watch",
+    "productPrice": 9525.5,
+    "quantity": 167,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/d63e1260ab9823cd64cbe4336a5bb94d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18888,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Beige",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "s.Oliver Women Stripes Beige Top",
+    "productPrice": 410.25,
+    "quantity": 148,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5a76ef8930d8bd543d8f7e6f5383d390_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18889,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Shorts",
+    "baseColour": "Pink",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Nike Women Solid Pink Shorts",
+    "productPrice": 9961.25,
+    "quantity": 174,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f105cf31753c2cbdf23e8722dc83a019_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18890,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Camisoles",
+    "baseColour": "Maroon",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Red Rose Maroon Camisole",
+    "productPrice": 2989.0,
+    "quantity": 149,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Red-Rose-Maroon-Bra_c75c0ad76e53ba58736e6f8fd21d07b0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18891,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Boxers",
+    "baseColour": "Multi",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Probase Multicoloured Printed Boxers",
+    "productPrice": 8809.0,
+    "quantity": 156,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Probase-Men-Yellow-Boxers_80cada245724ee958e0c5721d51cfab7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18892,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Classic Polo Men Stripes Blue Tshirts",
+    "productPrice": 353.5,
+    "quantity": 65,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8e4099bc672a376b156e1fe903fd5e16_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18893,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Baggit Women Blue Bag",
+    "productPrice": 3575.5,
+    "quantity": 104,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/895bed5b7e643c97fb880515cea0c930_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18894,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "UCB Men's Polo Neck With Lion Logo Navy Blue T-shirt",
+    "productPrice": 2831.0,
+    "quantity": 117,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b54b7d7f19b9dbb54c85c584719c46ef_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18895,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Pink",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Doodle Kids Girls Pink I love Shopping Top",
+    "productPrice": 8252.5,
+    "quantity": 133,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ef9685293a987f515492addd034006bf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18896,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Lotto Men Atlantica Black Sports Shoe",
+    "productPrice": 4497.5,
+    "quantity": 135,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1279efc8b61fb461a804f0c1f82f276b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18897,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Grey",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Little Miss Women Printed Grey T-shirt",
+    "productPrice": 5448.75,
+    "quantity": 169,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e2604389938f13f2cc1a772bba320a45_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18898,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Backpacks",
+    "baseColour": "Red",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Unisex Chicago Bulls Red Backpack",
+    "productPrice": 2412.5,
+    "quantity": 86,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/d0817a4778047d75a9d4f32e78b9b1fd_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18899,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Jeans",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Jealous 21 Women Black Jegging",
+    "productPrice": 3906.25,
+    "quantity": 180,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/054b93509e888e996ba7b12b554870e3_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18900,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men Sports Black Sports Shoes",
+    "productPrice": 5832.25,
+    "quantity": 98,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9c0d1badace8d2eb9680232648e94d85_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18901,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Magenta",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Ethnic",
+    "productDisplayName": "Mother Earth Women Magenta Kurta",
+    "productPrice": 547.75,
+    "quantity": 63,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1dea61d01ec84aed63dcbb32adda717a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18902,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Numero Uno Men Black Flip Flops",
+    "productPrice": 2932.5,
+    "quantity": 74,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7b99e89eac30c7d4d78d54c8cc67e35a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18903,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Murcia Women Snake Print Bag Brown Handbags",
+    "productPrice": 7830.5,
+    "quantity": 114,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b11805dfd1077ea3a4538fba3ffed149_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18904,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Myntra Men's If You Don't Like Navy Blue T-shirt",
+    "productPrice": 9295.25,
+    "quantity": 134,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c6a6fbe4d75e40529b7be5427d095142_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18905,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Jewellery Set",
+    "baseColour": "Gold",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Estelle Women Earrings & Pendant Set",
+    "productPrice": 1226.0,
+    "quantity": 172,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/4067d54c1f9caba707a51d665ef0e38e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18906,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Dupatta",
+    "baseColour": "Orange",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Ethnic",
+    "productDisplayName": "Aurelia Women Voile Orange Dupatta",
+    "productPrice": 8271.25,
+    "quantity": 174,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/88540c74d7d507c9371c5d9f37125ce1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18907,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "DKNY Women White Dial Watch NY8472",
+    "productPrice": 4000.25,
+    "quantity": 189,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/a002d0eed07e5e2c140da41e8db2ddf7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18908,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Track Pants",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men Solid Navy Blue Track Pant",
+    "productPrice": 9489.5,
+    "quantity": 187,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/98252134c6398e50aeebd873e6eafceb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18909,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Capris",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Girls Black Capris",
+    "productPrice": 6197.5,
+    "quantity": 84,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5158808a5bdd60c8c8af6999f8481160_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18910,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Red",
+    "season": "Summer",
+    "year": 2013,
+    "usage": "Casual",
+    "productDisplayName": "Gliders Men Esquire Red Flip Flops",
+    "productPrice": 4146.75,
+    "quantity": 167,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9c1df994bfd66e4485b82d0e74066d98_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18911,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Lavender",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Women Lavender Hagkok Sports Shoes",
+    "productPrice": 2931.75,
+    "quantity": 150,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/97b4da7324d9f9b3a6f507333141faae_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18912,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Bra",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Enamor White Bra",
+    "productPrice": 5323.25,
+    "quantity": 174,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/493409fb23791fa2cb220289e92affd7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18913,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Shorts",
+    "baseColour": "Black",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Gini and Jony Kids Boys Solid Black Shorts",
+    "productPrice": 1006.25,
+    "quantity": 85,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1d2eaf1491e0bf4906165ab1eaff3ad1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18914,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "F Sports Men White Outlander Sports Shoes",
+    "productPrice": 365.25,
+    "quantity": 158,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/F-Sports-Men-White-Outlander-Sports-Shoes_b600b7c68b5e9dd8b56dcd8732ce0fda_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18915,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Lips",
+    "articleType": "Lip Gloss",
+    "baseColour": "Brown",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Revlon Gold Dust Poussiere Doree Colorburst Lip Gloss 024",
+    "productPrice": 7401.0,
+    "quantity": 51,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Revlon-Gold-Dust-Poussiere-Doree-Colorburst-Lip-Gloss-024_ed41da69ac3f9c1c17cb6517a999b749_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18916,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Trousers",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "John Miller Men Dark Grey Trousers",
+    "productPrice": 8860.75,
+    "quantity": 65,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/987d4390421e951dafe4bfdaba57f5fd_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18917,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Tantra Women Flower Heart Black Long T-shirt",
+    "productPrice": 1579.5,
+    "quantity": 167,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/906c588711dcf840a61168758f463664_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18918,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Police Men White Dial Watch PL12698JS",
+    "productPrice": 3845.5,
+    "quantity": 109,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Police-Men-Steel-Dial-Watch_51e58f90f98b042641c9b54f09b54fd6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18919,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Sea Green",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Aurelia Women Sea Green Kurta",
+    "productPrice": 6730.25,
+    "quantity": 123,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2e25195b2eaba31b89a991f2e0dbd532_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18920,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "FILA Men Liga II Black Shoes",
+    "productPrice": 8630.5,
+    "quantity": 175,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ea051d39d65bfdcba994e6cd49061bd7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18921,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Jewellery",
+    "articleType": "Earrings",
+    "baseColour": "Gold",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Estelle Women Gold Earrings",
+    "productPrice": 1020.75,
+    "quantity": 189,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Estelle-Earrings_7271511bf974f34b0c0e80431617e034_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18922,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Purple",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Jealous 21 Women Uaine Purple Tops",
+    "productPrice": 734.0,
+    "quantity": 111,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/144954d20ce2e31fe6953f3e249e9a68_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18923,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Bottomwear",
+    "articleType": "Jeans",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Tokyo Talkies Women Navy Slim Fit Jeans",
+    "productPrice": 2260.25,
+    "quantity": 101,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/a6ea6713bae041ef4f62d3612586d1ef_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18924,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Eyewear",
+    "articleType": "Sunglasses",
+    "baseColour": "Gold",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Pal Zileri Men Casual Gold Frame Sunglasses",
+    "productPrice": 2453.75,
+    "quantity": 77,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e9266175735b50a2f6d100ae2ef44fe6_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18925,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Formal Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Formal",
+    "productDisplayName": "Arrow Men Black Formal Shoes",
+    "productPrice": 823.5,
+    "quantity": 183,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8f3b9f4c5f554e39681567b22985966e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18926,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Puma Men's YugoRun Black White Shoe",
+    "productPrice": 4941.75,
+    "quantity": 133,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/fae0ae76d008674551fbdbb64988ea51_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18927,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Women Blue Top",
+    "productPrice": 4164.0,
+    "quantity": 158,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/58c4b740c2d2e9b52c6900579c7ff2d2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18928,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men White and Navy Blue T-shirt",
+    "productPrice": 9701.5,
+    "quantity": 144,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Puma-Men-White-and-Navy-Blue-Stripe-Polo-T-shirt_a81acd98afcadd66fa8ee8531c82ad46_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18929,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Doodle Kids Girls City Chic White Top",
+    "productPrice": 8405.5,
+    "quantity": 148,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/416f7bd57546242fd72a817de0d517e5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18930,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "ONLY Women Black Top",
+    "productPrice": 9569.75,
+    "quantity": 144,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9d4d7aa206e22813311c0a0406ce02a4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18931,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Deodorant",
+    "baseColour": "Gold",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Colour me Men Gold Deo",
+    "productPrice": 4657.75,
+    "quantity": 58,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Colour-me-Men-Gold-Deo_73efa9034af7165f848dcc367558b461_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18932,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Wallets",
+    "articleType": "Wallets",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Baggit Women Lamboo Mayur Black Wallet",
+    "productPrice": 2490.75,
+    "quantity": 149,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6222ae36196ec90b30a683927c219428_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18933,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Elle Women Dark Pink Top",
+    "productPrice": 7003.25,
+    "quantity": 54,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Elle-Women-Dark-Pink-Top_ce0e1c18ffc47444dcb28bb7b78ae13f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18934,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "Nike Women Free Run Pink Sports Shoes",
+    "productPrice": 4638.0,
+    "quantity": 116,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5b0a6dd6aadd4d4ba230ff849b36481b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18935,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Estd. 1977 Men Black Sandals",
+    "productPrice": 3829.75,
+    "quantity": 116,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2a07ce87fedfca8928f12f3ddf6b7632_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18936,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Men Adi Cells Black Flip Flops",
+    "productPrice": 1104.5,
+    "quantity": 65,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b057c9e8d5ccc63369807a12f67a39ac_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18937,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2013,
+    "usage": "Casual",
+    "productDisplayName": "GAS Men Brown Count Casual Shoes",
+    "productPrice": 9052.25,
+    "quantity": 68,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f2d705addd04fcf5516aef873254441e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18938,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Loungewear and Nightwear",
+    "articleType": "Bath Robe",
+    "baseColour": "Pink",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Red Rose Women White & Pink Polka Dot Print Bath Robe",
+    "productPrice": 6909.75,
+    "quantity": 162,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Red-Rose-Women-Bath-Robe_b47ef24153050e66fce7429a01204ca9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18939,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Headwear",
+    "articleType": "Caps",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Puma Unisex White Cap",
+    "productPrice": 8947.0,
+    "quantity": 168,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Puma-Unisex-White-Cap_d397dc3eb9ff8a12d079f08a9b6c430d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18940,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Mufflers",
+    "articleType": "Mufflers",
+    "baseColour": "Yellow",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors Of Benetton Women Yellow Muffler",
+    "productPrice": 1879.5,
+    "quantity": 134,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/70506325cf800559ba06b15300846ea8_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18941,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "ADIDAS Women's Adi Groove Blue Flip Flop",
+    "productPrice": 2960.0,
+    "quantity": 53,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9234f2dacc377d713b7788f670f7bf9d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18942,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2013,
+    "usage": "Casual",
+    "productDisplayName": "Coolers Men Brown Pokar Flip Flops",
+    "productPrice": 8963.75,
+    "quantity": 99,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Coolers-Men-POKAR-Brown-Flip-Flops_8b247db935e7cfffb8f5a0b8d578f7bf_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18943,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "Beige",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Baggit Women Beige Bag",
+    "productPrice": 4027.5,
+    "quantity": 123,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/1041605c3decc95ef96c970da17ad051_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18944,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Navy Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "Aurelia Women Navy Blue Kurta",
+    "productPrice": 6179.0,
+    "quantity": 127,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Aurelia-Women-Navy-Blue-Kurta_269c51a0aa07f814b0d68df6b37d4113_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18945,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Puma Men Cabana Racer Sketch White Sports Shoes",
+    "productPrice": 3429.5,
+    "quantity": 128,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/c7a70ae4f57ca4c605f4fabb82c735fc_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18946,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Red",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Locomotive Men Check Red Shirt",
+    "productPrice": 8624.25,
+    "quantity": 124,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e87ae94ffdf37c089daaad8d451f6995_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18947,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Casual Shoes",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Nike Men White Capri II Casual Shoe",
+    "productPrice": 7514.75,
+    "quantity": 74,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9f8463e724322e0b47cc9f615acab635_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18948,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Purple",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Scullers Men Scul Purple White Shirt",
+    "productPrice": 2278.5,
+    "quantity": 198,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/11dcaeada4fab2e575c449e922425c5d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18949,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tunics",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Fusion Beats Women White Printed Tunic",
+    "productPrice": 4036.75,
+    "quantity": 67,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/3c92594cc9b62cba6a314a9ca9fd1e19_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18950,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Green",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Ethnic",
+    "productDisplayName": "Mother Earth Women Blue Kurta",
+    "productPrice": 480.25,
+    "quantity": 121,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/a576a21253c4cc6b7c04426389c1c58f_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18951,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Brown",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Inc 5 Women Brown Heels",
+    "productPrice": 4537.25,
+    "quantity": 117,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/be1fc833328c2708141568e2476abe81_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18952,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Jackets",
+    "baseColour": "Cream",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Forever New Women Stone Cream Jacket",
+    "productPrice": 3005.5,
+    "quantity": 165,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/01c417703d7775105ba346c691f4700b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18953,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Kurtas",
+    "baseColour": "Peach",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Ethnic",
+    "productDisplayName": "W Women Peach Kurta",
+    "productPrice": 1320.0,
+    "quantity": 103,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8e6291cb947f1d35eb4ebc3c73baf1eb_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18954,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Basics Men Blue Slim Fit Checked Shirt",
+    "productPrice": 6326.0,
+    "quantity": 79,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/2811fe105e63b5795a6442edb85bb6cd_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18955,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Heels",
+    "baseColour": "Gold",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Catwalk Women Golden Wedges",
+    "productPrice": 5091.0,
+    "quantity": 59,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Golden-Sandals_5fddd65067f3c7c0224439efc7a99ac8_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18956,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Women Solid Purple Top",
+    "productPrice": 7592.0,
+    "quantity": 135,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/97d87b20b1a8810ee10f617a8a7ccc52_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18957,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Scullers For Her Women Blue Top",
+    "productPrice": 4105.25,
+    "quantity": 111,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/018b322355f8a44f117488fee256049c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18958,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Copper",
+    "season": "Winter",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Rocia Women Copper Sandals",
+    "productPrice": 5396.0,
+    "quantity": 182,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/93455095a8c1bc951c7bd258b600dfa1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18959,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Yellow",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Classic Polo Men's Swiss Yellow T-shirt",
+    "productPrice": 1393.0,
+    "quantity": 61,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Classic-Polo-Mens-Swiss-Yellow-T-shirt_e87fa11cdb977d11d3e673a69f4a63db_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18960,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Tantra Men's Black Sabbath Navy T-shirt",
+    "productPrice": 1012.0,
+    "quantity": 125,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7c9e2e7c405128361af34be207a439a2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18961,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Belts",
+    "articleType": "Belts",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lino Perros Men Black Leather Belt",
+    "productPrice": 812.75,
+    "quantity": 157,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/749432e06d8d1b969077552ecebd9cd4_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18962,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Tan",
+    "season": "Summer",
+    "year": 2013,
+    "usage": "Casual",
+    "productDisplayName": "Gas Men Eldorado Tan Casual  Sandals",
+    "productPrice": 5557.0,
+    "quantity": 163,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/465863ba7b810b5ef6c516fe91c77308_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18963,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Enamor Women Pack of 3 Mid-Rise Bikini Brief",
+    "productPrice": 8734.25,
+    "quantity": 143,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9d76cb50cdc99a3519f78164dbc691ae_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18964,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "French Connection Men White T-shirt",
+    "productPrice": 2924.0,
+    "quantity": 194,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9dc3c008c07a5df5b46622ee5d8579de_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18965,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Flats",
+    "baseColour": "Silver",
+    "season": "Fall",
+    "year": 2010,
+    "usage": "Casual",
+    "productDisplayName": "Carlton London Women Wedge Silver Sandal",
+    "productPrice": 7012.75,
+    "quantity": 178,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/a2a3d03e64b5041ab052d5a6b10d282a_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18966,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Clutches",
+    "baseColour": "Off White",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Yelloe Off White Fur Zip Clutch",
+    "productPrice": 2606.0,
+    "quantity": 109,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b548017b7f2a2d8582c75ac1afeeb28b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18967,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Palm Tree Kids Girls Printed White Tops",
+    "productPrice": 9331.75,
+    "quantity": 62,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/b590f001fb08f324b17ce869686b27dc_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18968,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Briefs",
+    "baseColour": "Grey",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Hanes Men Grey Ultimate Duo Dry Cotton Stretch Bikini Briefs",
+    "productPrice": 5572.25,
+    "quantity": 154,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Hanes-Men-Ultimate-Grey-Brief_0782bb329d30535e2a3bef5657940458_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18969,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Lips",
+    "articleType": "Lipstick",
+    "baseColour": "Red",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Revlon Super Lusterous Lipstick 304",
+    "productPrice": 8201.5,
+    "quantity": 108,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Revlon-Super-Lusterous-Mad-About-Mauve-Lipstick-304_82c2b163c41babfca78eeb61693c666d_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18970,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Personal Care",
+    "subCategory": "Fragrance",
+    "articleType": "Perfume and Body Mist",
+    "baseColour": "Green",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Formula 1 Go Men Perfume",
+    "productPrice": 9774.75,
+    "quantity": 144,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/ebe4131154706db0b3469237133343e2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18971,
+  "fields": {
+    "gender": "Girls",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Palm Tree Girls Pink Top",
+    "productPrice": 2265.75,
+    "quantity": 105,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/83f4ab34db71459ba1f80bb8992cf9d5_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18972,
+  "fields": {
+    "gender": "Unisex",
+    "masterCategory": "Accessories",
+    "subCategory": "Headwear",
+    "articleType": "Caps",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Unisex Blue Cap",
+    "productPrice": 8485.75,
+    "quantity": 50,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Adidas-Unisex-Blue-Capf0fdfddb2e26677c8067afe9586c6cba_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18973,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Olive",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Men Olive Tshirts",
+    "productPrice": 5357.25,
+    "quantity": 118,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6c598ee94ff155384130481aec05525e_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18974,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Wallets",
+    "articleType": "Wallets",
+    "baseColour": "Black",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "United Colors of Benetton Men Solid Black Wallets",
+    "productPrice": 4734.0,
+    "quantity": 190,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/09fca1f67e3f78b18f76473749d93e59_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18975,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Yellow",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Tokyo Talkies Women Yellow Top",
+    "productPrice": 5138.0,
+    "quantity": 146,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9e616458a21ce9d3b0ddf0895b24df0b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18976,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Arrow Sport Men Solid White Polo Tshirts",
+    "productPrice": 2116.75,
+    "quantity": 184,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/10d750eb60726aff0c78cd599a20e0ab_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18977,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Shoes",
+    "articleType": "Sports Shoes",
+    "baseColour": "Purple",
+    "season": "",
+    "year": 2011,
+    "usage": "Sports",
+    "productDisplayName": "Kalenji Ekiden 200 Wn Purple 2011",
+    "productPrice": 2925.5,
+    "quantity": 103,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/5dfa5ed32e290bbaeedd937ecdaa9a8b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18978,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Orange",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Lotto Women Coral Elegant Flip Flops",
+    "productPrice": 1488.0,
+    "quantity": 123,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/839c627c80dba9ac4412db3f35a52bb7_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18979,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Green",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Flying Machine Men Check Green Shirts",
+    "productPrice": 7138.25,
+    "quantity": 83,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/6934c2d1bc11313536fd82a1192a1d33_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18980,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Wrangler Men Applique Navy Blue Tshirt",
+    "productPrice": 4339.0,
+    "quantity": 91,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/7909093ce4f956a24582b330a249d911_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18981,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Flip Flops",
+    "articleType": "Flip Flops",
+    "baseColour": "Grey",
+    "season": "Winter",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men's Winglet II Grey Yellow White Flip Flop",
+    "productPrice": 3385.75,
+    "quantity": 56,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/9473ae18face7603f7bdb4b6fda3d8e2_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18982,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Brown",
+    "season": "Summer",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Lee Cooper Men Brown Casual Sandals",
+    "productPrice": 7934.5,
+    "quantity": 152,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/99808c9bdfee6165a0cec81d0219c1a1_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18983,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Footwear",
+    "subCategory": "Sandal",
+    "articleType": "Sandals",
+    "baseColour": "Olive",
+    "season": "Fall",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Puma Men Olive Techno Ind Sandal",
+    "productPrice": 3974.5,
+    "quantity": 75,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Puma-Men-Olive-Techno-Ind-Sandal_3e7aa0b204f4317a017dfbefe260700b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18984,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "Pink",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Urban Yoga Women Printed Pink T-shirt",
+    "productPrice": 7405.25,
+    "quantity": 69,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/8e3ddd6772fdb8b69c328402aa2baa0c_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18985,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Trunk",
+    "baseColour": "Charcoal",
+    "season": "Summer",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Chromozome Men Charcoal Trunk Trunks",
+    "productPrice": 7358.75,
+    "quantity": 165,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cbcfe2066b676f7852c6282f85dfc43b_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18986,
+  "fields": {
+    "gender": "Boys",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Blue",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Palm Tree Boys Check Blue Shirt",
+    "productPrice": 3347.0,
+    "quantity": 192,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/17d5cdd77de6f87ee2451b98f3466d88_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18987,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Lips",
+    "articleType": "Lipstick",
+    "baseColour": "Pink",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "NA",
+    "productDisplayName": "Lakme Absolute Lip Last Day Kiss Lip Colour",
+    "productPrice": 8077.0,
+    "quantity": 167,
+    "image": "http://assets.myntassets.com/assets/images/55001/2018/3/9/11520591701090-Lakme-Absolute-Lip-Last-Day-Kiss-Lip-Colour-9831520591701048-1.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18988,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Shirts",
+    "baseColour": "Navy Blue",
+    "season": "Fall",
+    "year": 2011,
+    "usage": "Casual",
+    "productDisplayName": "Indigo Nation Men Club Satin Hot Stepper Navy Blue Shirt",
+    "productPrice": 6695.25,
+    "quantity": 120,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/f3dc8c5e7e7d7394150506a3f2f417c0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18989,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Accessories",
+    "subCategory": "Bags",
+    "articleType": "Handbags",
+    "baseColour": "White",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Murcia Women White With Stitch Bag",
+    "productPrice": 6463.0,
+    "quantity": 163,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/61d4d060e05c3e4ff1771c5e724d6c16_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18990,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Accessories",
+    "subCategory": "Watches",
+    "articleType": "Watches",
+    "baseColour": "Black",
+    "season": "Winter",
+    "year": 2016,
+    "usage": "Casual",
+    "productDisplayName": "Fastrack Men Black Watch",
+    "productPrice": 471.5,
+    "quantity": 84,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/20e55321f145a292edb4cc9776ea1985_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18991,
+  "fields": {
+    "gender": "Men",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tshirts",
+    "baseColour": "White",
+    "season": "Fall",
+    "year": 2010,
+    "usage": "Sports",
+    "productDisplayName": "ADIDAS Men Stripe Polo White Polo T-shirt",
+    "productPrice": 9387.25,
+    "quantity": 182,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/e1bba450764df5aed92151be769e42d0_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18992,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Innerwear",
+    "articleType": "Bra",
+    "baseColour": "Purple",
+    "season": "Summer",
+    "year": 2014,
+    "usage": "Casual",
+    "productDisplayName": "Lovable Women Fiona Purple Bra",
+    "productPrice": 2589.0,
+    "quantity": 177,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Lovable-Women-Fiona-Purple-Bra_82e37d2949af0a30ff61f6f7fc80cadc_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18993,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Loungewear and Nightwear",
+    "articleType": "Lounge Pants",
+    "baseColour": "Blue",
+    "season": "Winter",
+    "year": 2015,
+    "usage": "Casual",
+    "productDisplayName": "Jockey Women Blue Lounge Pants",
+    "productPrice": 2828.75,
+    "quantity": 181,
+    "image": "http://assets.myntassets.com/assets/images/27421/2015/11/23/11448283185049-Jockey-Women-Blue-Lounge-Pants-3621448283184622-1.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18994,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Personal Care",
+    "subCategory": "Skin Care",
+    "articleType": "Face Wash and Cleanser",
+    "baseColour": "Green",
+    "season": "Spring",
+    "year": 2017,
+    "usage": "Casual",
+    "productDisplayName": "Lotus Herbals Neem & Clove Purifying Face Wash",
+    "productPrice": 235.5,
+    "quantity": 91,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/Lotus-Herbals-Neem---Clove-Purifying-Face-Wash_576266f24033ada1522c55008afacea9_images.jpg"
+  }
+},
+{
+  "model": "ku_market_place.product",
+  "pk": 18995,
+  "fields": {
+    "gender": "Women",
+    "masterCategory": "Apparel",
+    "subCategory": "Topwear",
+    "articleType": "Tops",
+    "baseColour": "Magenta",
+    "season": "Summer",
+    "year": 2012,
+    "usage": "Casual",
+    "productDisplayName": "Sepia Women Printed Magenta Top",
+    "productPrice": 2928.0,
+    "quantity": 145,
+    "image": "http://assets.myntassets.com/v1/images/style/properties/cd2a1ae491facf0acf36443998a0c217_images.jpg"
+  }
+}
+]

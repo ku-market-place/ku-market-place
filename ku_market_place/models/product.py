@@ -3,9 +3,18 @@ from django.utils import timezone
 
 
 class Product(models.Model):
-
-    product_name = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
-    price = models.IntegerField(default=0)
-    quantity = models.IntegerField(default=0)
-    pub_date = models.DateTimeField('date published', default=timezone.now)
+    gender = models.CharField(max_length=10, default='Unisex')
+    masterCategory = models.CharField(max_length=50, blank=True)
+    subCategory = models.CharField(max_length=50, blank=True)
+    articleType = models.CharField(max_length=50, blank=True)
+    baseColour = models.CharField(max_length=50, blank=True)
+    season = models.CharField(max_length=20, blank=True)
+    year = models.IntegerField(default=2023, blank=True)
+    usage = models.CharField(max_length=20, blank=True)
+    productDisplayName = models.CharField(max_length=255, blank=True)
+    productPrice = models.FloatField(default=0.0)
+    quantity = models.IntegerField(default=100)
+    image = models.CharField(max_length=300, blank=True)
+    
+    def __str__(self):
+        return self.productDisplayName

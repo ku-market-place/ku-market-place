@@ -1,45 +1,33 @@
 from django.http import Http404
-from django.urls import reverse
-from django.views import generic
-from ku_market_place.models import Product
+from django.views import generic, View
+from ku_market_place.models import Product, Order, OrderItem
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-
+from ku_market_place.filters import ProductFilter
+from ku_market_place.forms import CartForm
+import csv
 
 class ProductView(generic.ListView):
+    queryset = Product.objects.all()
     template_name = 'ku_market_place/products.html'
     context_object_name = 'product_lists'
 
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.filterset = None
+
     def get_queryset(self):
-        """Return products list."""
-        return Product.objects.all()
+        """Return filtered products list."""
+        queryset = super().get_queryset()
+        self.filterset = ProductFilter(self.request.GET, queryset=queryset)
+        return self.filterset.qs
 
-    def get(self, request, *args, **kwargs):
-        search_product = request.GET.get('search')
-        if search_product:
-            product_lists = Product.objects.filter(
-                Q(product_name__icontains=search_product)
-            )
-            if product_lists:
-                return render(
-                    request,
-                    self.template_name,
-                    context={"product_lists": product_lists},
-                )
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['gender_lists'] = Product.objects.values_list("gender", flat=True).distinct().order_by("gender")
+        context['form'] = self.filterset.form
+        return context
 
-            return render(
-                request,
-                self.template_name,
-                context={"product_lists": []},
-            )
-
-        return render(
-            request,
-            self.template_name,
-            context={"product_lists": self.get_queryset()},
-        )
 
 
 class ASCProduct(generic.ListView):
@@ -86,10 +74,21 @@ class ProductDetailView(generic.DetailView):
                 f"Product ID {key} does not exist.❗️")
             return redirect("ku-market-place:product")
 
+        image = ""
+        with open('ku_market_place/data/images.csv', 'r') as image_csv:
+            csv_reader = csv.DictReader(image_csv)
+            for row in csv_reader:
+                file = row['filename'].replace('.jpg', '')
+                if file == str(key):
+                    image = row['link']
+                    break
+
         return render(
             request,
             self.template_name,
-            context={"product": product},
+            context={
+                "product": product,
+            },
         )
 
 
@@ -103,3 +102,33 @@ def contact(request):
 
 def order_list(request):
     return render(request, 'ku_market_place/order_list.html')
+
+
+class CartDailView(View):
+    def get(self, request, *args, **kwargs):
+        order = Order.objects.filter(customer_id=request.user.id)
+        if order:
+            # Get all order items related to the order
+            order_items = OrderItem.objects.filter(order_item_id=order.id)
+        else:
+            # If there's no order, set order_items to an empty queryset or handle it accordingly
+            order_items = OrderItem.objects.none()
+        return render(request, 'ku_market_place/cart.html', {'order_items': order_items})
+
+    def post(self, request, *args, **kwargs):
+        form = CartForm(request.POST)
+
+        if form.is_valid():
+            # Assuming you have a function to process the form data and create/update the order
+            # You might need to adjust this based on your actual model relationships and requirements
+            print("form is valid")
+
+            return render(request, 'ku_market_place/order_list.html')  # Redirect to the order list or another page
+        else:
+            # If the form is not valid, re-render the cart page with the validation errors
+            return render(request, 'ku_market_place/cart.html', {'form': form})
+
+
+class AddToCartView(View):
+    def post(self, request, *args, **kwargs):
+        return render(request, 'ku_market_place/cart.html')
