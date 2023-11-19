@@ -104,6 +104,9 @@ class CartDailView(View):
             customer.save()
             order = Order.objects.filter(customer_id=customer.id).last()
             order.status = random.choice(['Shipping', 'Delivery', 'Complete'])
+            for order_item in order.order_item_id.all():
+                order_item.product.quantity = order_item.product.quantity - order_item.quantity
+                order_item.product.save()
             order.save()
             order = Order.objects.create(
                 customer_id=customer,
@@ -123,7 +126,6 @@ class AddToCartView(View):
         quantity = request.POST.get("quantity")
 
         if form:
-
             # Assuming you have a Product model, get the product instance
             product = Product.objects.get(pk=product_id)
             # Assuming you have a Cart model, add the product to the cart
