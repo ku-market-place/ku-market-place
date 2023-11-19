@@ -73,6 +73,10 @@ def contact(request):
 
 
 def order_list(request):
+    customer = Customer.objects.get(user=request.user)
+    orders = Order.objects.filter(customer_id=customer.id)
+    if orders:
+        return render(request, 'ku_market_place/order_list.html', {'orders': orders})
     return render(request, 'ku_market_place/order_list.html')
 
 
@@ -88,13 +92,15 @@ class CartDailView(View):
         order = Order.objects.filter(customer_id=customer.id).last()
         if order:
             order_items = order.order_item_id.all()
+            total_amount = order.total_amount
         else:
             order_items = OrderItem.objects.none()
+            total_amount = 0
         try:
             form.fields['new_shipping_address'].initial = customer.address
-            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
+            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form, 'total_amount': total_amount})
         except Customer.DoesNotExist:
-            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
+            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form, 'total_amount': total_amount})
 
     def post(self, request, *args, **kwargs):
         form = CheckOutForm(request.POST)
@@ -103,8 +109,11 @@ class CartDailView(View):
             customer.address = request.POST.get("new_shipping_address")
             customer.save()
             order = Order.objects.filter(customer_id=customer.id).last()
-            order.status = random.choice(['Shipping', 'Delivery', 'Complete'])
-            for order_item in order.order_item_id.all():
+            order_items = order.order_item_id.all()
+            if not order_items:
+                return redirect('ku-market-place:view_cart')
+            order.status = random.choice(['Shipping', 'Delivery'])
+            for order_item in order_items:
                 order_item.product.quantity = order_item.product.quantity - order_item.quantity
                 order_item.product.save()
             order.save()
@@ -112,7 +121,7 @@ class CartDailView(View):
                 customer_id=customer,
             )
             order.save()
-            return redirect('ku-market-place:view_cart')
+            return redirect('ku-market-place:order_list')
         return redirect('ku-market-place:view_cart')
 
 
@@ -153,14 +162,16 @@ class AddToCartView(View):
                 order.save()
                 return redirect('ku-market-place:view_cart')
             try:
-                order = order.order_item_id.get(product=order_item.product)
-                order.quantity = int(order.quantity) + int(quantity)
-                order.total_amount = (product.productPrice * int(quantity)) + order.total_amount
-                order.save()
+                order_item = order.order_item_id.get(product=order_item.product)
+                order_item.quantity = int(order_item.quantity) + int(quantity)
+                order_item.total_amount = (product.productPrice * int(quantity)) + order.total_amount
+                order_item.save()
                 return redirect('ku-market-place:view_cart')
             except OrderItem.DoesNotExist:
                 order.order_item_id.add(order_item)
                 order.save()
+            order.total_amount = order.total_amount + (product.productPrice * int(quantity))
+            order.save()
 
             # Redirect to a success page or the same page if needed
             return redirect('ku-market-place:view_cart')

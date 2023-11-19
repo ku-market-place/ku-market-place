@@ -7,7 +7,11 @@
 {% block content %}
     <div class="container mt-4">
         <h1 style="margin-top: 60px;">Your Cart</h1>
-
+        <hr>
+    <div style="text-align: right">
+        <h3 style="display: inline-block; margin-right: 20px;">Items in your cart: {{ order_items.count }}</h3>
+        <h3 style="display: inline-block;">Total Amount: {{ total_amount }}</h3>
+    </div>
         {% if order_items %}
             {% for order in order_items %}
                 <a href="{% url 'ku-market-place:single_product' order.product.id %}">
