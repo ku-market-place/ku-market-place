@@ -12,24 +12,37 @@
         <h3 style="display: inline-block; margin-right: 20px;">Items in your cart: {{ order_items.count }}</h3>
         <h3 style="display: inline-block;">Total Amount: {{ total_amount }}</h3>
     </div>
+    <div style="overflow-y: auto; overflow-x: hidden; max-height: 600px;">
         {% if order_items %}
             {% for order in order_items %}
-                <a href="{% url 'ku-market-place:single_product' order.product.id %}">
                 <div class="row mb-4">
-                    <div class="col-md-4">
-                        <img src="{{ order.product.image }}" style="width: 300px; height:300px;">
-                    </div>
+                    <a href="{% url 'ku-market-place:single_product' order.product.id %}">
+                        <div class="col-md-4">
+                            <img src="{{ order.product.image }}" style="width: 300px; height: 300px;">
+                        </div>
+                    </a>
                     <div class="col-md-8" href="{% url 'ku-market-place:single_product' order.product.id %}">
-                        <h3>{{ order.product.productDisplayName }}</h3>
+                        <a href="{% url 'ku-market-place:single_product' order.product.id %}">
+                            <h3>{{ order.product.productDisplayName }}</h3>
+                        </a>
                         <p>{{ order.product.description }}</p>
                         <p>Price: {{ order.product.productPrice }}</p>
                         <p>Quantity: {{ order.quantity }}</p>
                         <p>Total: {{ order.total_amount }}</p>
+                        <form method="post" action="{% url 'ku-market-place:remove_from_cart' order.product.id %}"
+                                class="d-inline">
+                            {% csrf_token %}
+                            {{ form_delete.as_p }}
+                            <br>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i> Remove
+                            </button>
+                        </form>
                     </div>
                 </div>
-                </a>
             {% endfor %}
         {% endif %}
+    </div>
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
             {% csrf_token %}
             <div class="flex-container">

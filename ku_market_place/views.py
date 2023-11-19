@@ -83,6 +83,7 @@ def order_list(request):
 class CartDailView(View):
     def get(self, request, *args, **kwargs):
         form = CheckOutForm()
+        form_delete = CartForm()
         try:
             customer = Customer.objects.get(user=request.user)
         except Customer.DoesNotExist:
@@ -98,9 +99,13 @@ class CartDailView(View):
             total_amount = 0
         try:
             form.fields['new_shipping_address'].initial = customer.address
-            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form, 'total_amount': total_amount})
+            return render(request, 'ku_market_place/cart.html',
+                          {'order_items': order_items, 'form': form,
+                           'total_amount': total_amount, 'form_delete': form_delete})
         except Customer.DoesNotExist:
-            return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form, 'total_amount': total_amount})
+            return render(request, 'ku_market_place/cart.html',
+                          {'order_items': order_items, 'form': form,
+                           'total_amount': total_amount, 'form_delete': form_delete})
 
     def post(self, request, *args, **kwargs):
         form = CheckOutForm(request.POST)
@@ -135,10 +140,7 @@ class AddToCartView(View):
         quantity = request.POST.get("quantity")
 
         if form:
-            # Assuming you have a Product model, get the product instance
             product = Product.objects.get(pk=product_id)
-            # Assuming you have a Cart model, add the product to the cart
-            # You may want to associate the product with the user and save it to the cart
             order_item = OrderItem.objects.create(
                 product=product,
                 quantity=quantity,
@@ -177,4 +179,31 @@ class AddToCartView(View):
             return redirect('ku-market-place:view_cart')
 
         # If the form is not valid, you can re-render the same template with the form
+        return redirect('ku-market-place:view_cart')
+
+
+class RemoveFromCartView(View):
+    def get(self, request, *args, **kwargs):
+        return redirect('ku-market-place:view_cart')
+
+    def post(self, request, *args, **kwargs):
+        form = CartForm(request.POST)
+        product_id = kwargs.get("product_id")
+        quantity = request.POST.get("quantity")
+        customer = Customer.objects.get(user=request.user)
+        order = Order.objects.filter(customer_id=customer.id).last()
+        order_item = get_object_or_404(order.order_item_id, product_id=product_id)
+        if form:
+            if int(order_item.quantity) == int(quantity):
+                order.total_amount -= order_item.total_amount
+                order.order_item_id.remove(order_item)
+                order.save()
+                return redirect('ku-market-place:view_cart')
+            elif order_item.quantity > int(quantity):
+                order_item.quantity = order_item.quantity - int(quantity)
+                order_item.total_amount = order_item.total_amount - (order_item.product.productPrice * int(quantity))
+                order_item.save()
+                order.total_amount = order.total_amount - (order_item.product.productPrice * int(quantity))
+                order.save()
+                return redirect('ku-market-place:view_cart')
         return redirect('ku-market-place:view_cart')
