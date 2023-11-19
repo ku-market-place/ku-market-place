@@ -6,6 +6,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.db.models import Q
 from ku_market_place.forms import CartForm, CheckOutForm
+import random
 
 
 class ProductView(generic.ListView):
@@ -81,16 +82,25 @@ def order_list(request):
 
 class CartDailView(View):
     def get(self, request, *args, **kwargs):
+        print(request.user.id)
         form = CheckOutForm()
-        # order = Order.objects.filter(customer_id=request.user.id)
-        order = Order.objects.all()
+        customer = Customer.objects.get(user=request.user)
+        order = Order.objects.filter(customer_id=customer.id).last()
         if order:
-            # Get all order items related to the order
-            order_items = OrderItem.objects.filter(id=order[0].id)
+            order_items = order.order_item_id.all()
         else:
-            # If there's no order, set order_items to an empty queryset or handle it accordingly
             order_items = OrderItem.objects.none()
         return render(request, 'ku_market_place/cart.html', {'order_items': order_items, 'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = CheckOutForm(request.POST)
+        if form:
+            customer = Customer.objects.get(user=request.user)
+            order = Order.objects.filter(customer_id=customer.id).last()
+            order.status = random.choice(['Shipping', 'Delivery', 'Complete'])
+            order.save()
+            return redirect('ku-market-place:view_cart')
+        return redirect('ku-market-place:view_cart')
 
 
 class AddToCartView(View):
@@ -101,27 +111,29 @@ class AddToCartView(View):
         form = CartForm(request.POST)
         product_id = kwargs.get("product_id")
         quantity = request.POST.get("quantity")
+        print(quantity)
 
-        if form.is_valid():
+        if form:
+            print("form is valid")
 
             # Assuming you have a Product model, get the product instance
             product = Product.objects.get(pk=product_id)
-
             # Assuming you have a Cart model, add the product to the cart
             # You may want to associate the product with the user and save it to the cart
             order_item = OrderItem.objects.create(
-                product_id=product,
+                product=product,
                 quantity=quantity,
-                total_amount=product.price * quantity,
+                total_amount=product.productPrice * int(quantity),
             )
             order_item.save()
             try:
-                order = Order.objects.get(customer_id=request.user.id)
+                customer = Customer.objects.get(user=request.user)
+                order = Order.objects.get(customer_id=customer.id)
                 order.order_item_id.add(order_item)
                 order.save()
             except Order.DoesNotExist:
                 order = Order.objects.create(
-                    customer_id=Customer.objects.get(pk=request.user.id),
+                    customer=Customer.objects.get(user=request.user),
                     order_item_id=order_item,
                     total_amount=order_item.total_amount,
                 )

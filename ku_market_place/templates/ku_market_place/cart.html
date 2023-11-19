@@ -25,11 +25,17 @@
             {% endfor %}
         {% endif %}
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">
-            <i class="fas fa-shopping-cart"></i> Checkout
-          </button>
+            {% csrf_token %}
+
+            {{ form.new_shipping_address.label_tag }}
+            {{ form.new_shipping_address }}
+
+            {{ form.payment_method.label_tag }}
+            {{ form.payment_method }}
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-shopping-cart"></i> Checkout
+            </button>
         </form>
     </div>
 {% endblock %}
