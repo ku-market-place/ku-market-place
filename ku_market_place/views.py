@@ -100,6 +100,8 @@ class CartDailView(View):
         form = CheckOutForm(request.POST)
         if form:
             customer = Customer.objects.get(user=request.user)
+            customer.address = request.POST.get("new_shipping_address")
+            customer.save()
             order = Order.objects.filter(customer_id=customer.id).last()
             order.status = random.choice(['Shipping', 'Delivery', 'Complete'])
             order.save()
