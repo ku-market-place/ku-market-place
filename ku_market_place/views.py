@@ -7,6 +7,7 @@ from ku_market_place.filters import ProductFilter
 from ku_market_place.forms import CartForm
 import csv
 
+
 class ProductView(generic.ListView):
     queryset = Product.objects.all()
     template_name = 'ku_market_place/products.html'
@@ -24,40 +25,8 @@ class ProductView(generic.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['gender_lists'] = Product.objects.values_list("gender", flat=True).distinct().order_by("gender")
         context['form'] = self.filterset.form
         return context
-
-
-
-class ASCProduct(generic.ListView):
-    """Filter product from the lowest price to the highest price."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('price')
-
-
-class DESCProduct(generic.ListView):
-    """Filter product from the highest price to the lowest price."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('-price')
-
-
-class NewProduct(generic.ListView):
-    """Filter product from the newest item to the oldest item."""
-    template_name = 'ku_market_place/products.html'
-    context_object_name = 'product_lists'
-
-    def get_queryset(self):
-        """Return products list."""
-        return Product.objects.order_by('-pub_date')
 
 
 class ProductDetailView(generic.DetailView):
