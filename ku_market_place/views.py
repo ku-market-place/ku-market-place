@@ -57,7 +57,6 @@ class ProductDetailView(generic.DetailView):
             self.template_name,
             context={
                 "product": product,
-                "image": image
             },
         )
 
