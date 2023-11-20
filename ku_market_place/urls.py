@@ -19,4 +19,5 @@ urlpatterns = [
     path('cart/', login_required(views.CartDailView.as_view(), login_url="google_login"), name='view_cart'),
     path('add/<int:product_id>/', login_required(views.AddToCartView.as_view(), login_url="google_login"), name='add_to_cart'),
     path('remove/<int:product_id>/', login_required(views.RemoveFromCartView.as_view(), login_url="google_login"), name='remove_from_cart'),
+    path('order/<int:order_id>', login_required(views.OrderView.as_view(), login_url="google_login"), name='order'),
 ]
