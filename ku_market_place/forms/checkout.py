@@ -10,5 +10,5 @@ class CheckOutForm(forms.Form):
     )
     payment_method = forms.ChoiceField(
         label='Payment Method',
-        choices=[('credit_card', 'Credit Card'), ('paypal', 'PayPal'), ('cash_on_delivery', 'Cash on Delivery')],
+        choices=[('Credit Card', 'Credit Card'), ('PayPal', 'PayPal'), ('Cash on Delivery', 'Cash on Delivery')],
     )

@@ -109,7 +109,7 @@ class CartDailView(View):
 
     def post(self, request, *args, **kwargs):
         form = CheckOutForm(request.POST)
-        payment = request.POST.get("payment")
+        payment = request.POST.get("payment_method")
         if form:
             customer = Customer.objects.get(user=request.user)
             customer.address = request.POST.get("new_shipping_address")
@@ -122,12 +122,7 @@ class CartDailView(View):
             for order_item in order_items:
                 order_item.product.quantity = order_item.product.quantity - order_item.quantity
                 order_item.product.save()
-            if payment == 'Credit Card':
-                order.payment = 'Credit Card'
-            elif payment == 'Paypal':
-                order.payment = 'Paypal'
-            else:
-                order.payment == 'Cash on Delivery'
+            order.payment = payment
             order.save()
             order = Order.objects.create(
                 customer_id=customer,
