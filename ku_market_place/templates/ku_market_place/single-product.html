@@ -33,6 +33,11 @@
                         <li><strong>Usage:</strong> {{ product.usage }}</li>
                         <li><strong>Year of Production:</strong> {{ product.year }}</li>
                     </ul>
+                    {% if messages %}
+                    {% for massage in messages %}
+                        <p>{{ massage }}</p>
+                    {% endfor %}
+                    {% endif %}
                     <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
                     <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
                         {% csrf_token %}

@@ -167,9 +167,21 @@ class AddToCartView(View):
                 return redirect('ku-market-place:view_cart')
             try:
                 order_item = order.order_item_id.get(product=order_item.product)
+                if int(quantity) > product.quantity or product.quantity == 0:
+                    messages.warning(
+                        request,
+                        f"Product {product.productDisplayName} has only {product.quantity} left.❗️")
+                if product.quantity < (int(quantity) + order_item.quantity):
+                    messages.warning(
+                        request,
+                        f"Product {product.productDisplayName} has only {product.quantity} left.\n"
+                        + f"You have {order_item.quantity} in your cart already.❗️")
+                    return redirect("ku-market-place:single_product", pk=product_id)
                 order_item.quantity = int(order_item.quantity) + int(quantity)
                 order_item.total_amount = (product.productPrice * int(quantity)) + order.total_amount
                 order_item.save()
+                order.total_amount = order.total_amount + (product.productPrice * int(quantity))
+                order.save()
                 return redirect('ku-market-place:view_cart')
             except OrderItem.DoesNotExist:
                 order.order_item_id.add(order_item)
