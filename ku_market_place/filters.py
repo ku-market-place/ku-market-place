@@ -52,9 +52,8 @@ class ProductFilter(django_filters.FilterSet):
     )
 
     PRICE_CHOICES = [
-        ('', 'Any'),
-        ('asc', 'Ascending'),
-        ('desc', 'Descending'),
+        ('asc', 'Cheapest'),
+        ('desc', 'Most Expensive'),
     ]
 
     order_by_price = django_filters.ChoiceFilter(
