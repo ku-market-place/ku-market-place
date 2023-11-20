@@ -185,6 +185,11 @@ class AddToCartView(View):
                 order.save()
                 return redirect('ku-market-place:view_cart')
             except OrderItem.DoesNotExist:
+                if int(quantity) > product.quantity or product.quantity == 0:
+                    messages.warning(
+                        request,
+                        f"Product {product.productDisplayName} has only {product.quantity} left.❗️")
+                    return redirect("ku-market-place:single_product", pk=product_id)
                 order.order_item_id.add(order_item)
                 order.save()
             order.total_amount = order.total_amount + (product.productPrice * int(quantity))
