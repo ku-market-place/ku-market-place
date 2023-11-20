@@ -56,9 +56,9 @@ python3 manage.py migrate
 Load the initial data for the polls app, run the following command:
 
 ```commandline
-python manage.py loaddata product/polls.json data/user.json
+python manage.py loaddata data/alldata.json
 ```
 or
 ```commandline
-python3 manage.py loaddata product/polls.json data/user.json
+python3 manage.py loaddata data/alldata.json
 ```
