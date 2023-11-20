@@ -47,7 +47,8 @@
             {% endfor %}
         {% endif %}
     </div>
-        <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
+    <div class="fixed-bottom mb-4 ml-4">
+        <form method="post" action="{% url 'ku-market-place:view_cart' %}">
             {% csrf_token %}
             <div class="flex-container">
                 <h2>Shipping Address: </h2>
@@ -71,5 +72,6 @@
                 <i class="fas fa-shopping-cart"></i> Checkout
             </button>
         </form>
+    </div>
     </div>
 {% endblock %}
