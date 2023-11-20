@@ -109,6 +109,7 @@ class CartDailView(View):
 
     def post(self, request, *args, **kwargs):
         form = CheckOutForm(request.POST)
+        payment = request.POST.get("payment")
         if form:
             customer = Customer.objects.get(user=request.user)
             customer.address = request.POST.get("new_shipping_address")
@@ -121,6 +122,12 @@ class CartDailView(View):
             for order_item in order_items:
                 order_item.product.quantity = order_item.product.quantity - order_item.quantity
                 order_item.product.save()
+            if payment == 'Credit Card':
+                order.payment = 'Credit Card'
+            elif payment == 'Paypal':
+                order.payment = 'Paypal'
+            else:
+                order.payment == 'Cash on Delivery'
             order.save()
             order = Order.objects.create(
                 customer_id=customer,
@@ -207,3 +214,11 @@ class RemoveFromCartView(View):
                 order.save()
                 return redirect('ku-market-place:view_cart')
         return redirect('ku-market-place:view_cart')
+
+
+class OrderView(View):
+    def get(self, request, *args, **kwargs):
+        order_id = kwargs.get("order_id")
+        order = get_object_or_404(Order, pk=order_id)
+        order_items = order.order_item_id.all()
+        return render(request, 'ku_market_place/order.html', {'order_items': order_items, 'order': order})

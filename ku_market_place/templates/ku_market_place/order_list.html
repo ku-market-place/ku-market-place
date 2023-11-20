@@ -81,6 +81,7 @@
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Order ID</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Customer Name</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Product Name</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide text-center">Payment</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Order Status</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Order Total</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-center">Order Details</th>
@@ -97,11 +98,12 @@
                                 {{ order_item.product.productDisplayName }}<br>
                                 {% endfor %}
                                 </td>
+                                <td>{{ order.payment }}</td>
                                 <td>{{ order.status }}</td>
                                 <td>{{ order.total_amount }}</td>
                                 <td>
                                     {# Replace the URL with your actual URL for order details #}
-{#                                    <a href='{% url "order_details" order.id %}' class="link-accent">Details</a>#}
+                                    <a href='{% url "ku-market-place:order" order.id %}' class="link-accent">Details</a>
                                 </td>
                             </tr>
                             {% endif %}

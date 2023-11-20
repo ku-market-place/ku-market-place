@@ -8,11 +8,15 @@
     <div class="container mt-4">
         <h1 style="margin-top: 60px;">Your Cart</h1>
         <hr>
-    <div style="text-align: right">
-        <h3 style="display: inline-block; margin-right: 20px;">Items in your cart: {{ order_items.count }}</h3>
-        <h3 style="display: inline-block;">Total Amount: {{ total_amount }}</h3>
-    </div>
-    <div style="overflow-y: auto; overflow-x: hidden; max-height: 600px;">
+            <div class="flex-container d-flex justify-content-between row">
+                <div class="col">
+                    <h3 style="margin-right: 20px; text-align: left;">Items in your cart: {{ order_items.count }}</h3>
+                </div>
+                <div class="col">
+                    <h3 style="text-align: right">Total Amount: ฿ {{ total_amount }}</h3>
+                </div>
+            </div>
+    <div style="overflow-y: auto; overflow-x: hidden; max-height: 600px; margin-top: 60px">
         {% if order_items %}
             {% for order in order_items %}
                 <div class="row mb-4">
@@ -26,9 +30,9 @@
                             <h3>{{ order.product.productDisplayName }}</h3>
                         </a>
                         <p>{{ order.product.description }}</p>
-                        <p>Price: {{ order.product.productPrice }}</p>
+                        <p>Price: ฿ {{ order.product.productPrice }}</p>
                         <p>Quantity: {{ order.quantity }}</p>
-                        <p>Total: {{ order.total_amount }}</p>
+                        <p>Total: ฿ {{ order.total_amount }}</p>
                         <form method="post" action="{% url 'ku-market-place:remove_from_cart' order.product.id %}"
                                 class="d-inline">
                             {% csrf_token %}
@@ -46,20 +50,19 @@
         <form method="post" action="{% url 'ku-market-place:view_cart' %}" class="fixed-bottom mb-4 ml-4">
             {% csrf_token %}
             <div class="flex-container">
-                <h2>Shipping Address</h2>
-            {{ form.new_shipping_address.label_tag }}
+                <h2>Shipping Address: </h2>
             {{ form.new_shipping_address }}
             </div>
             <style>
-                .flex-container {
+                .flex-container{
                     display: flex;
-                    flex-direction: column;  /* or row, depending on your layout preference */
+                    flex-direction: column;
                 }
-
                 .flex-container h2 {
                     margin-bottom: 10px;  /* Optional: Adjust margin as needed */
                 }
             </style>
+<br>
 
             {{ form.payment_method.label_tag }}
             {{ form.payment_method }}
