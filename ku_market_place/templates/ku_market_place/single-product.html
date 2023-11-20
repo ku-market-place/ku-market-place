@@ -25,6 +25,8 @@
                     <p>Discover a piece that speaks to your individuality:</p>
                     <ul>
                         <li><strong>Gender:</strong> {{ product.gender }}</li>
+                        <li><strong>Master Category: </strong> {{ product.masterCategory }}</li>
+                        <li><strong>Sub Category: </strong> {{ product.subCategory }}</li>
                         <li><strong>Article Type:</strong> {{ product.articleType }}</li>
                         <li><strong>Color:</strong> {{ product.baseColour }}</li>
                         <li><strong>Season:</strong> {{ product.season }}</li>
@@ -34,30 +36,15 @@
                     <p>Only <span>{{ product.quantity }}</span> left in stock! Act now.</p>
                     <form method="post" action="{% url 'ku-market-place:add_to_cart' product_id=product.id %}">
                         {% csrf_token %}
-{#                        <div class="row">#}
-{#                            <div class="col-md-4">#}
-{#                                <fieldset>#}
-{#                                    <input type="text" name="quantity" id="id_quantity" value="1" onfocus="clearField(this);" onblur="clearField(this);">#}
-{#                                </fieldset>#}
-{#                            </div>#}
-{#                            <div class="col-md-8">#}
-{#                                <fieldset>#}
-{#                                    <button type="submit" id="form-submit" class="button">Add to Cart</button>#}
-{#                                </fieldset>#}
-{#                            </div>#}
                         {{ form.as_p }}
                         <input type="submit" class="button" value="Add to Cart">
                     </form>
-                    <div class="down-content">
-                        <div class="categories">
-                            <h6>Explore More:
-                                <span><a href="#">Pants</a>, <a href="#">Women</a>, <a href="#">Lifestyle</a></span></h6>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<br>
 
 <script language="text/Javascript">
 cleared[0] = cleared[1] = cleared[2] = 0;
