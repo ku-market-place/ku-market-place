@@ -13,7 +13,7 @@ git clone https://github.com/ku-market-place/ku-market-place.git
 ```
 
 ## Step 2: Check the directory
-To ensure that your are in the correct directory (ku-polls), run the following command:
+To ensure that you are in the correct directory, run the following command:
 
 Windows:
 ```commandline
@@ -53,12 +53,12 @@ or
 python3 manage.py migrate
 ```
 
-Load the initial data for the polls app, run the following command:
+Load the initial data for the app, run the following command:
 
 ```commandline
-python manage.py loaddata product/polls.json data/user.json
+python manage.py loaddata ku_market_place/data/product300.json ku_market_place/data/user.json
 ```
 or
 ```commandline
-python3 manage.py loaddata product/polls.json data/user.json
+python3 manage.py loaddata ku_market_place/data/product300.json ku_market_place/data/user.json
 ```

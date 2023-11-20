@@ -63,8 +63,9 @@ python3 manage.py runserver
 To stop the server, simply press `Ctrl-C` in the terminal.
 
 ### Demo Account:
-| Username | Password |
-|----------|----------|
-| demo1    | easy1    |
-| demo2    | easy2    |
-| demo3    | easy3    |
+| Username | Password   |
+|----------|------------|
+| demo1    | easy1easy1 |
+| demo2    | easy2easy2 |
+| demo3    | easy3easy3 |
+| admin1   | easy1easy1 |
