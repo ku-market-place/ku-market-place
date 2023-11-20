@@ -179,9 +179,9 @@ class AddToCartView(View):
                         + f"You have {order_item.quantity} in your cart already.❗️")
                     return redirect("ku-market-place:single_product", pk=product_id)
                 order_item.quantity = int(order_item.quantity) + int(quantity)
-                order_item.total_amount = (product.productPrice * int(quantity)) + order.total_amount
+                order_item.total_amount = (product.productPrice * order_item.quantity)
                 order_item.save()
-                order.total_amount = order.total_amount + (product.productPrice * int(quantity))
+                order.total_amount += (product.productPrice * int(quantity))
                 order.save()
                 return redirect('ku-market-place:view_cart')
             except OrderItem.DoesNotExist:
@@ -192,7 +192,7 @@ class AddToCartView(View):
                     return redirect("ku-market-place:single_product", pk=product_id)
                 order.order_item_id.add(order_item)
                 order.save()
-            order.total_amount = order.total_amount + (product.productPrice * int(quantity))
+            order.total_amount += (product.productPrice * int(quantity))
             order.save()
 
             # Redirect to a success page or the same page if needed
