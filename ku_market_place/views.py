@@ -171,6 +171,7 @@ class AddToCartView(View):
                     messages.warning(
                         request,
                         f"Product {product.productDisplayName} has only {product.quantity} left.❗️")
+                    return redirect("ku-market-place:single_product", pk=product_id)
                 if product.quantity < (int(quantity) + order_item.quantity):
                     messages.warning(
                         request,
